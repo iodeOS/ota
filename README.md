@@ -11,10 +11,10 @@ The objectives in the conception of this ROM are threefold:
     <li> To ease a quick adoption of this ROM by new users. We especially target users that are concerned by the protection of their privacy, but are not reluctant to still use inquisitive apps like Google ones. We thus included MicroG as well as a coherent set of default apps (all open source, with one exception), and simplified the initial setup of the system. Particularly, an initialization of MicroG has been made with GCM notifications allowed by default, a privacy-friendly network location provider (DéjàVu) pre-selected, as well as Nominatim Geocoder.</li>
     <li> To provide a new and powerful way of blocking ads, malwares, data leaks of all kinds to many intrusive servers. We are developing an analyzer, tightly integrated into the system, that captures all DNS requests and network traffic, as well as a user interface (the iodé app). Compared to some other well-known adblockers, this has the advantages of:
     <ul>
-        <li>avoiding to lock the VPN for that use,</li>
-        <li>being independent of the kind of DNS server (encrypted or not, ...), as we capture the request before it is injected into the network,</li>
-        <li>precisely mapping DNS requests and network packets to the Android apps that emitted (or received) them,</li>
-        <li>deciding which apps have a filtered network usage (by default, all apps), and which ones can communicate with blacklisted servers.</li>
+        <li>Avoiding to lock the VPN for that use. You can even use another adblocker that uses VPN technology alongside our blocker.</li>
+        <li>Being independent of the kind of DNS server used by the system or set by an independent app: classical DNS on UDP port 53 or any other one, DNS over TLS (DoT), DNS over HTTPS (DoH), ..., as we capture the DNS requests before they are transmitted to the system function that emits the DNS request. What we do not support, is DoH when it is natively built into applications, i.e. when an app communicates directly with a DoH server, without asking name resolution to the system. It would require to decrypt HTTPS packets between such an app and the DoH server, which may create a big security hole.</li>
+        <li>Precisely mapping DNS requests and network packets to the Android apps that emitted (or received) them.</li>
+        <li>Deciding which apps have a filtered network usage (by default, all apps), and which ones can communicate with blacklisted servers.</li>
     </ul>
 </ol>
 
