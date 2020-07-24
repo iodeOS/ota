@@ -62,13 +62,13 @@ grey-out "Unlock OEM" in developer settings
 
 3 - fastboot oem unlock 0x\<unlock code\>
 
-4 - fastboot flash recovery [twrp-3.3.1-0-20200210-poplar_10.img](https://github.com/iodeOS/ota/releases/download/v1.0/twrp-3.3.1-0-20200210-poplar_10.img)
+4 - fastboot flash recovery [twrp-3.3.1-0-20200210-poplar_10.img](https://github.com/iodeOS/ota/releases/download/v1-poplar/twrp-3.3.1-0-20200210-poplar_10.img)
   
 5 - press power+VOLUME DOWN until reboot in TWRP
 
 6 - from TWRP => Wipe => Format Data: type 'yes'
 
-7 - from TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload \<rom.zip\> (the rom image can be [found here](https://github.com/iodeOS/ota/releases/tag/v1.0))
+7 - from TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload \<rom.zip\> (the rom image can be [found here](https://github.com/iodeOS/ota/releases/tag/v1-poplar))
 
 # How to flash Mi 9
 
@@ -76,10 +76,10 @@ grey-out "Unlock OEM" in developer settings
 
 1 - adb reboot bootloader (or press power+VOLUME DOWN)
 
-2 - fastboot flash recovery [twrp-3.4.0-0-cepheus-mauronofrio.img](https://github.com/iodeOS/ota/releases/download/v1.0-cepheus/twrp-3.4.0-0-cepheus-mauronofrio.img)
+2 - fastboot flash recovery [twrp-3.4.0-0-cepheus-mauronofrio.img](https://github.com/iodeOS/ota/releases/download/v1-cepheus/twrp-3.4.0-0-cepheus-mauronofrio.img)
 
 3 - press power+VOLUME UP until reboot in TWRP
 
 4 - from TWRP => Wipe => Format Data: type 'yes'
 
-5 - from TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload \<rom.zip\> (the rom image can be [found here](https://github.com/iodeOS/ota/releases/tag/v1.0-cepheus))
+5 - from TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload \<rom.zip\> (the rom image can be [found here](https://github.com/iodeOS/ota/releases/tag/v1-cepheus))
