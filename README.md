@@ -43,7 +43,8 @@ The objectives in the conception of this ROM are threefold:
 
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
-1. At reboot, activate adb and type: 'adb reboot bootloader', or press  power/vol-/bixby buttons altogether.
+1. At reboot, follow the setup wizard, then activate developer options
+1. Activate adb and type: 'adb reboot bootloader', or press  power/vol-/bixby buttons altogether.
 1. Flash lineageOS recovery (https://github.com/iodeOS/...) with command : heimdall flash --RECOVERY <recovery_filename>.img
 1. As soon as the flash ends, press power/vol+/bixby buttons altogether to directly reboot to recovery
 1. Sideload flash iodé ((https://github.com/
