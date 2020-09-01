@@ -39,6 +39,15 @@ The objectives in the conception of this ROM are threefold:
 * Fingerprint vibration toggle.
 * Swipe down to clear all in recent apps.
 
+# How to flash Samsung S9
+
+1. Update the stock firmware to the latest
+1. Unlock OEM in developer settings
+1. At reboot, activate adb and type: 'adb reboot bootloader', or press  power/vol-/bixby buttons altogether.
+1. Flash lineageOS recovery (https://github.com/iodeOS/...) with command : heimdall flash --RECOVERY <recovery_filename>.img
+1. As soon as the flash ends, press power/vol+/bixby buttons altogether to directly reboot to recovery
+1. Sideload flash iodé ((https://github.com/
+1. Format data
 
 
 # How to flash Sony Xperia (XA2, XZ1, XZ2)
