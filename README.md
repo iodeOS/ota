@@ -45,9 +45,9 @@ The objectives in the conception of this ROM are threefold:
 1. Unlock OEM in developer settings
 1. At reboot, follow the setup wizard, then activate developer options
 1. Activate adb and type: 'adb reboot bootloader', or press  power/vol-/bixby buttons altogether.
-1. Flash lineageOS recovery (https://github.com/iodeOS/...) with command : heimdall flash --RECOVERY <recovery_filename>.img
+1. Flash lineageOS [recovery](https://github.com/iodeOS/ota/releases/tag/v1-starlte) with command : heimdall flash --RECOVERY <recovery_filename>.img
 1. As soon as the flash ends, press power/vol+/bixby buttons altogether to directly reboot to recovery
-1. Sideload flash iodé ((https://github.com/
+1. Sideload flash [iodéOS](https://github.com/iodeOS/ota/releases/tag/v1-starlte)
 1. Format data
 
 
