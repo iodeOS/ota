@@ -61,6 +61,7 @@ The objectives in the conception of this ROM are threefold:
    * XA2: fastboot flash boot_a | boot_b [twrp-3.4.0-0-pioneer.img](https://github.com/iodeOS/ota/releases/download/v1-pioneer/twrp-3.4.0-0-pioneer.img)
    * XZ1: fastboot flash recovery [twrp-3.3.1-0-20200210-poplar_10.img](https://github.com/iodeOS/ota/releases/download/v1-poplar/twrp-3.3.1-0-20200210-poplar_10.img)
    * XZ2: fastboot flash boot_a | boot_b [twrp-3.4.0-0-akari.img](https://github.com/iodeOS/ota/releases/download/v1-akari/twrp-3.4.0-0-akari.img)
+1. Unplug the phone
 1. press POWER+VOLUME DOWN until reboot in TWRP
 1. From TWRP => Wipe => Format Data: type 'yes'
 1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; (the rom image can be found here: [XA2](https://github.com/iodeOS/ota/releases/tag/v1-pioneer), [XZ1](https://github.com/iodeOS/ota/releases/tag/v1-poplar), [XZ2](https://github.com/iodeOS/ota/releases/tag/v1-akari))
