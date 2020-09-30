@@ -33,6 +33,7 @@ The objectives in the conception of this ROM are threefold:
 * PDF: Pdf Viewer Plus.
 * Personal notes: Carnet.
 * {Ad/Malware/Data leak}-blocker: iodé.
+* News: to keep users informed about our developments, as well as a FAQ.
 
 ## Useful options from other custom ROMs:
 * Smart charging (disables charging when a given level is reached, to protect battery health).
