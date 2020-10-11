@@ -40,15 +40,15 @@ The objectives in the conception of this ROM are threefold:
 * Fingerprint vibration toggle.
 * Swipe down to clear all in recent apps.
 
-# How to flash Samsung S9
+# How to flash Samsung S9/S9+
 
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. At reboot, follow the setup wizard, then activate developer options
 1. Activate adb and type: 'adb reboot bootloader', or press  power/vol-/bixby buttons altogether.
-1. Flash lineageOS [recovery](https://github.com/iodeOS/ota/releases/tag/v1-starlte) with command : heimdall flash --RECOVERY <recovery_filename>.img
+1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/tag/v1-starlte/recovery.img) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/tag/v1-star2lte/recovery.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
 1. As soon as the flash ends, press power/vol+/bixby buttons altogether to directly reboot to recovery
-1. Sideload flash [iodéOS](https://github.com/iodeOS/ota/releases/tag/v1-starlte)
+1. Sideload flash [iodéOS for s9](https://github.com/iodeOS/ota/releases/tag/v1-starlte) or [iodéOS for s9+](https://github.com/iodeOS/ota/releases/tag/v1-star2lte)
 1. Format data
 
 
