@@ -40,15 +40,27 @@ The objectives in the conception of this ROM are threefold:
 * Fingerprint vibration toggle.
 * Swipe down to clear all in recent apps.
 
-# How to flash Samsung S9/S9+
+# How to flash Fairphone 3
+
+
+# How to flash Mi 9
+
+1. Unlock your phone by following the instructions from [Xiaomi website](https://en.miui.com/unlock/)
+1. adb reboot bootloader (or press power+VOLUME DOWN)
+1. fastboot flash recovery [twrp-3.4.0-0-cepheus-mauronofrio.img](https://github.com/iodeOS/ota/releases/download/v1-cepheus/twrp-3.4.0-0-cepheus-mauronofrio.img)
+1. Press POWER+VOLUME UP until reboot in TWRP
+1. From TWRP => Wipe => Format Data: type 'yes'
+1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; (the rom image can be [found here](https://github.com/iodeOS/ota/releases/tag/v1-cepheus))
+
+# How to flash Samsung S9/S9+/Note9
 
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
-1. At reboot, follow the setup wizard, then activate developer options
+1. At reboot, follow the setup wizard, make sure to be connected to the internet, then activate developer options
 1. Activate adb and type: 'adb reboot bootloader', or press  power/vol-/bixby buttons altogether.
-1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/tag/v1-starlte/recovery.img) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/tag/v1-star2lte/recovery.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
-1. As soon as the flash ends, press power/vol+/bixby buttons altogether to directly reboot to recovery
-1. Sideload flash [iodéOS for s9](https://github.com/iodeOS/ota/releases/tag/v1-starlte) or [iodéOS for s9+](https://github.com/iodeOS/ota/releases/tag/v1-star2lte)
+1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/tag/v1-starlte/recovery.img) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/tag/v1-star2lte/recovery.img) or  or  [recovery for Note9](https://github.com/iodeOS/ota/releases/tag/v1-crownlte/recovery.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
+1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
+1. Sideload flash [iodéOS for s9](https://github.com/iodeOS/ota/releases/tag/v1-starlte) or [iodéOS for s9+](https://github.com/iodeOS/ota/releases/tag/v1-star2lte) or or [iodéOS for Note9](https://github.com/iodeOS/ota/releases/tag/v1-crownlte)
 1. Format data
 
 
@@ -66,12 +78,3 @@ The objectives in the conception of this ROM are threefold:
 1. press POWER+VOLUME DOWN until reboot in TWRP
 1. From TWRP => Wipe => Format Data: type 'yes'
 1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; (the rom image can be found here: [XA2](https://github.com/iodeOS/ota/releases/tag/v1-pioneer), [XZ1](https://github.com/iodeOS/ota/releases/tag/v1-poplar), [XZ2](https://github.com/iodeOS/ota/releases/tag/v1-akari))
-
-# How to flash Mi 9
-
-1. Unlock your phone by following the instructions from [Xiaomi website](https://en.miui.com/unlock/)
-1. adb reboot bootloader (or press power+VOLUME DOWN)
-1. fastboot flash recovery [twrp-3.4.0-0-cepheus-mauronofrio.img](https://github.com/iodeOS/ota/releases/download/v1-cepheus/twrp-3.4.0-0-cepheus-mauronofrio.img)
-1. Press POWER+VOLUME UP until reboot in TWRP
-1. From TWRP => Wipe => Format Data: type 'yes'
-1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; (the rom image can be [found here](https://github.com/iodeOS/ota/releases/tag/v1-cepheus))
