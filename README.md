@@ -52,7 +52,7 @@ The objectives in the conception of this ROM are threefold:
 1. Format data
 1. fastboot oem lock
 
-# How to flash Mi 9
+# How to flash Xiaomi (Mi 9)
 
 1. Update the stock firmware to the latest
 1. Unlock your phone by following the instructions from [Xiaomi website](https://en.miui.com/unlock/)
