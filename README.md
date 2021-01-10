@@ -40,15 +40,15 @@ The objectives in the conception of this ROM are threefold:
 * Fingerprint vibration toggle.
 * Swipe down to clear all in recent apps.
 
-# How to flash Fairphone 3
+# How to flash Fairphone (FP3, FP3+)
 
 1. Update the stock firmware to the latest
 1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone-3/)
 1. adb reboot bootloader (or press VOLUME DOWN and plug phone while it's shut down)
 1. fastboot oem unlock
-1. fastboot flash boot [recovery for FP3](https://github.com/iodeOS/ota/releases/download/v1-FP3/recovery.img)
+1. fastboot flash boot [recovery for FP3(+)](https://github.com/iodeOS/ota/releases/download/v1-FP3/recovery.img)
 1. press POWER+VOLUME UP until reboot in recovery
-1. Sideload flash [iodéOS for FP3](https://github.com/iodeOS/ota/releases/download/v1-FP3/)
+1. Sideload flash [iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/download/v1-FP3/)
 1. Format data
 1. fastboot oem lock
 
@@ -62,7 +62,7 @@ The objectives in the conception of this ROM are threefold:
 1. From TWRP => Wipe => Format Data: type 'yes'
 1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; (the rom image can be [found here](https://github.com/iodeOS/ota/releases/tag/v1-cepheus))
 
-# How to flash Samsung S9/S9+/Note9
+# How to flash Samsung (S9, S9+, Note9)
 
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
