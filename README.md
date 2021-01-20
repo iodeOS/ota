@@ -26,7 +26,7 @@ The objectives in the conception of this ROM are threefold:
 * MicroG core apps: GmsCore, GsfProxy, FakeStore, maps API.
 * NLP backends for MicroG : DejaVuNLPBackend (default), MozillaNLPBackend, AppleNLPBackend, RadioCellsNLPBackend, NominatimNLPBackend
 * App stores : FDroid (with F-Droid Privileged Extension) and Aurora Store.
-* Browser: Qwant instead of Lineage’s default browser Jelly.
+* Browser: iodé Browser (based on Firefox) instead of Lineage’s default browser Jelly.
 * SMS: QKSMS instead of Lineage's default SMS app.
 * Maps/navigation: Magic Earth GPS & Navigation (the only one free but not open source).
 * Keyboard: OpenBoard instead of AOSP keyboard.
