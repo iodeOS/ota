@@ -68,11 +68,20 @@ The objectives in the conception of this ROM are threefold:
 1. Unlock OEM in developer settings
 1. At reboot, follow the setup wizard, make sure to be connected to the internet, then activate developer options
 1. Activate adb and type: 'adb reboot bootloader', or press  power/vol-/bixby buttons altogether.
-1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/tag/v1-starlte/recovery.img) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/tag/v1-star2lte/recovery.img) or  or  [recovery for Note9](https://github.com/iodeOS/ota/releases/tag/v1-crownlte/recovery.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
+1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/tag/v1-starlte/recovery.img) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/tag/v1-star2lte/recovery.img) or [recovery for Note9](https://github.com/iodeOS/ota/releases/tag/v1-crownlte/recovery.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
 1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
 1. Sideload flash [iodéOS for s9](https://github.com/iodeOS/ota/releases/tag/v1-starlte) or [iodéOS for s9+](https://github.com/iodeOS/ota/releases/tag/v1-star2lte) or or [iodéOS for Note9](https://github.com/iodeOS/ota/releases/tag/v1-crownlte)
 1. Format data
 
+# How to flash Samsung A5 2017
+
+1. Update the stock firmware to the latest
+1. Unlock OEM in developer settings
+1. Reboot and press power/vol-/home buttons altogether.
+1. Flash [twrp for A5](https://github.com/iodeOS/ota/releases/download/v1-a5y17lte/twrp-3.5.0_9-0-a5y17lte.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
+1. As soon as the flash ends, quickly press power/vol+/home buttons altogether to directly reboot to recovery
+1. From TWRP => Wipe => Format Data: type 'yes'
+1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; (the rom image can be [found here](https://github.com/iodeOS/ota/releases/tag/v1-a5y17lte))
 
 # How to flash Sony Xperia (XA2, XZ1, XZ2)
 
