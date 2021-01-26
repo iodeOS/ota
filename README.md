@@ -48,7 +48,7 @@ The objectives in the conception of this ROM are threefold:
 1. fastboot oem unlock
 1. fastboot flash boot [recovery for FP3(+)](https://github.com/iodeOS/ota/releases/download/v1-FP3/recovery.img)
 1. press POWER+VOLUME UP until reboot in recovery
-1. Sideload flash [iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/download/v1-FP3/)
+1. Sideload flash [iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v1-FP3)
 1. Format data
 1. fastboot oem lock
 
