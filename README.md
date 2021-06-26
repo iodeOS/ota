@@ -83,7 +83,7 @@ The objectives in the conception of this ROM are threefold:
 1. From TWRP => Wipe => Format Data: type 'yes'
 1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; (the rom image can be [found here](https://github.com/iodeOS/ota/releases/tag/v1-a5y17lte))
 
-# How to flash Sony Xperia (XA2, XZ1, XZ2)
+# How to flash Sony Xperia (XA2, XZ1, XZ2, XZ3)
 
 1. Get your unlock code from [Sony website](https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader)
 1. Unlock bootloader: connect to a wifi in order to grey-out "Unlock OEM" in developer settings
@@ -93,6 +93,7 @@ The objectives in the conception of this ROM are threefold:
    * XA2: fastboot flash boot_a | boot_b [twrp-3.4.0-0-pioneer.img](https://github.com/iodeOS/ota/releases/download/v1-pioneer/twrp-3.4.0-0-pioneer.img)
    * XZ1: fastboot flash recovery [twrp-3.3.1-0-20200210-poplar_10.img](https://github.com/iodeOS/ota/releases/download/v1-poplar/twrp-3.3.1-0-20200210-poplar_10.img)
    * XZ2: fastboot flash boot_a | boot_b [twrp-3.4.0-0-akari.img](https://github.com/iodeOS/ota/releases/download/v1-akari/twrp-3.4.0-0-akari.img)
+   * XZ3: fastboot flash boot_a | boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/download/v1-akatsuki/boot-akatsuki.img)
 1. Unplug the phone
 1. press POWER+VOLUME DOWN until reboot in TWRP
 1. From TWRP => Wipe => Format Data: type 'yes'
