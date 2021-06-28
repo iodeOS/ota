@@ -2,7 +2,7 @@
 
 # Introduction
 
-iodéOS is a privacy-focused operating system powered by LineageOS and based on the Android 10 mobile platform. iodéOS aims at protecting the user's privacy with a built-in adblocker and by freeing the smartphone from snitches.
+iodéOS is a privacy-focused operating system powered by LineageOS and based on the Android mobile platform. iodéOS aims at protecting the user's privacy with a built-in adblocker and by freeing the smartphone from snitches.
 
 The objectives in the conception of this ROM are threefold:
 
@@ -51,6 +51,16 @@ The objectives in the conception of this ROM are threefold:
 1. Sideload flash [iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v1-FP3)
 1. Format data
 1. fastboot oem lock
+
+
+# How to flash Teracube (2E)
+
+1. Update the stock firmware to the latest
+2. Unlock your phone & install TWRP [from Teracube’s forum](https://community.myteracube.com/t/advanced-users-only-twrp-recovery-root-for-teracube-2e/1729)
+3. Sideload flash [iodéOS for E2](https://github.com/iodeOS/ota/releases/tag/v1-2e)
+4. Format data
+
+
 
 # How to flash Xiaomi (Mi 9)
 
