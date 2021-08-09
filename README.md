@@ -100,21 +100,21 @@ The objectives in the conception of this ROM are threefold:
 1. adb reboot bootloader (or press VOLUME UP and plug phone while it's shut down)
 1. fastboot oem unlock 0x&lt;unlock code&gt;
 1. Following your device:
-   * XA2: fastboot flash boot_a | boot_b [twrp-3.4.0-0-pioneer.img](https://github.com/iodeOS/ota/releases/download/v1-pioneer/twrp-3.4.0-0-pioneer.img)
-   * XZ1: fastboot flash recovery [twrp-3.3.1-0-20200210-poplar_10.img](https://github.com/iodeOS/ota/releases/download/v1-poplar/twrp-3.3.1-0-20200210-poplar_10.img)
-   * XZ2: fastboot flash boot_a | boot_b [twrp-3.4.0-0-akari.img](https://github.com/iodeOS/ota/releases/download/v1-akari/twrp-3.4.0-0-akari.img)
-   * XZ3: fastboot flash boot_a | boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/download/v1-akatsuki/boot-akatsuki.img)
+   * XA2: fastboot flash boot_a | boot_b [boot-pioneer.img](https://github.com/iodeOS/ota/releases/download/v2-pioneer/boot-pioneer.img)
+   * XZ1: fastboot flash recovery [recovery-poplar.img](https://github.com/iodeOS/ota/releases/download/v2-poplar/recovery-poplar.img)
+   * XZ2: fastboot flash boot_a | boot_b [boot-akari.img](https://github.com/iodeOS/ota/releases/download/v2-akari/boot-akari.img)
+   * XZ3: fastboot flash boot_a | boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/download/v2-akatsuki/boot-akatsuki.img)
 
 ## XA2, XZ1, XZ2
 
 1. Unplug the phone
 1. press POWER+VOLUME DOWN until reboot in TWRP
 1. From TWRP => Wipe => Format Data: type 'yes'
-1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; (the rom image can be found here: [XA2](https://github.com/iodeOS/ota/releases/tag/v1-pioneer), [XZ1](https://github.com/iodeOS/ota/releases/tag/v1-poplar), [XZ2](https://github.com/iodeOS/ota/releases/tag/v1-akari))
+1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; (the rom image can be found here: [XA2](https://github.com/iodeOS/ota/releases/tag/v2-pioneer), [XZ1](https://github.com/iodeOS/ota/releases/tag/v2-poplar), [XZ2](https://github.com/iodeOS/ota/releases/tag/v2-akari))
 
 ## XZ3 
 
 1. Unplug the phone
 1. press POWER+VOLUME DOWN until reboot in recovery
 2. From recovery => Factory reset  => Format Data
-3. From recovery => Apply update => Apply from ADB => ADB Sideload [iodé for XZ3](https://github.com/iodeOS/ota/releases/download/v1-akatsuki/iode-2.0-20210625-akatsuki.zip)
+3. From recovery => Apply update => Apply from ADB => ADB Sideload [iodé for XZ3](https://github.com/iodeOS/ota/releases/tag/v2-akatsuki)
