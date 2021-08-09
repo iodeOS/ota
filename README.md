@@ -78,9 +78,9 @@ The objectives in the conception of this ROM are threefold:
 1. Unlock OEM in developer settings
 1. At reboot, follow the setup wizard, make sure to be connected to the internet, then activate developer options
 1. Activate adb and type: 'adb reboot bootloader', or press  power/vol-/bixby buttons altogether.
-1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/tag/v1-starlte/recovery.img) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/tag/v1-star2lte/recovery.img) or [recovery for Note9](https://github.com/iodeOS/ota/releases/tag/v1-crownlte/recovery.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
+1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/download/v2-starlte/recovery-starlte.img) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/download/v2-star2lte/recovery-star2lte.img) or [recovery for Note9](https://github.com/iodeOS/ota/releases/download/v2-crownlte/recovery-crownlte.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
 1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
-1. Sideload flash [iodéOS for s9](https://github.com/iodeOS/ota/releases/tag/v1-starlte) or [iodéOS for s9+](https://github.com/iodeOS/ota/releases/tag/v1-star2lte) or or [iodéOS for Note9](https://github.com/iodeOS/ota/releases/tag/v1-crownlte)
+1. Sideload flash [iodéOS for s9](https://github.com/iodeOS/ota/releases/tag/v2-starlte) or [iodéOS for s9+](https://github.com/iodeOS/ota/releases/tag/v2-star2lte) or or [iodéOS for Note9](https://github.com/iodeOS/ota/releases/tag/v2-crownlte)
 1. Format data
 
 # How to flash Samsung A5 2017
