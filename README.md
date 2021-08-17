@@ -74,7 +74,7 @@ The objectives in the conception of this ROM are threefold:
 
 # How to flash Samsung
 
-# How to flash Samsung A5 2017
+## A5 (2017)
 
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
