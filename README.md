@@ -72,16 +72,7 @@ The objectives in the conception of this ROM are threefold:
 1. From TWRP => Wipe => Format Data: type 'yes'
 1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; (the rom image can be [found here](https://github.com/iodeOS/ota/releases/tag/v1-cepheus))
 
-# How to flash Samsung (S9, S9+, Note9)
-
-1. Update the stock firmware to the latest
-1. Unlock OEM in developer settings
-1. At reboot, follow the setup wizard, make sure to be connected to the internet, then activate developer options
-1. Activate adb and type: 'adb reboot bootloader', or press  power/vol-/bixby buttons altogether.
-1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/download/v2-starlte/recovery-starlte.img) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/download/v2-star2lte/recovery-star2lte.img) or [recovery for Note9](https://github.com/iodeOS/ota/releases/download/v2-crownlte/recovery-crownlte.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
-1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
-1. Sideload flash [iodéOS for s9](https://github.com/iodeOS/ota/releases/tag/v2-starlte) or [iodéOS for s9+](https://github.com/iodeOS/ota/releases/tag/v2-star2lte) or or [iodéOS for Note9](https://github.com/iodeOS/ota/releases/tag/v2-crownlte)
-1. Format data
+# How to flash Samsung
 
 # How to flash Samsung A5 2017
 
@@ -92,6 +83,39 @@ The objectives in the conception of this ROM are threefold:
 1. As soon as the flash ends, quickly press power/vol+/home buttons altogether to directly reboot to recovery
 1. From TWRP => Wipe => Format Data: type 'yes'
 1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; (the rom image can be [found here](https://github.com/iodeOS/ota/releases/tag/v1-a5y17lte))
+
+## S9, S9+, Note9
+
+1. Update the stock firmware to the latest
+1. Unlock OEM in developer settings
+1. At reboot, follow the setup wizard, make sure to be connected to the internet, then activate developer options
+1. Activate adb and type: 'adb reboot bootloader', or press  power/vol-/bixby buttons altogether.
+1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/download/v2-starlte/recovery-starlte.img) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/download/v2-star2lte/recovery-star2lte.img) or [recovery for Note9](https://github.com/iodeOS/ota/releases/download/v2-crownlte/recovery-crownlte.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
+1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
+1. Sideload flash [iodéOS for s9](https://github.com/iodeOS/ota/releases/tag/v2-starlte) or [iodéOS for s9+](https://github.com/iodeOS/ota/releases/tag/v2-star2lte) or or [iodéOS for Note9](https://github.com/iodeOS/ota/releases/tag/v2-crownlte)
+1. Format data
+
+## S10, S10e, S10+
+
+1. Update the stock firmware to the latest
+2. Unlock OEM in developer settings
+3. Activate adb and type: 'adb reboot bootloader', or shut down phone &  press vol-/bixby buttons altogether while plugging to computer
+4. In Download Mode (DL), long press Vol+ and unlock bootloader
+5. Reboot to DL mode & flash recovery for S10 | recovery for S10e | recovery for S10+ with command: heimdall flash --RECOVERY <recovery_filename>.img
+6. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
+7. Sideload flash iodéOS for S10 | iodéOS for S10e | iodéOS for S10+
+8. Format data
+
+## Note 10, Note 10+
+
+1. Update the stock firmware to the latest
+2. Unlock OEM in developer settings
+3. Activate adb and type: 'adb reboot bootloader', or shut down phone &  press vol+/vol- buttons altogether while plugging to computer
+4. In Download Mode (DL), long press Vol+ and unlock bootloader
+5. Reboot to DL mode & flash recovery for Note10 | recovery for Note10+ with command: heimdall flash --RECOVERY <recovery_filename>.img
+6. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
+7. Sideload flash iodéOS for Note10 | iodéOS for Note10+
+8. Format data
 
 # How to flash Sony Xperia (XA2, XZ1, XZ2, XZ3)
 
