@@ -101,9 +101,9 @@ The objectives in the conception of this ROM are threefold:
 2. Unlock OEM in developer settings
 3. Activate adb and type: 'adb reboot bootloader', or shut down phone &  press vol-/bixby buttons altogether while plugging to computer
 4. In Download Mode (DL), long press Vol+ and unlock bootloader
-5. Reboot to DL mode & flash recovery for S10 | recovery for S10e | recovery for S10+ with command: heimdall flash --RECOVERY <recovery_filename>.img
+5. Reboot to DL mode & flash [recovery for S10](https://github.com/iodeOS/ota/releases/tag/v2-beyond1lte) | [recovery for S10e](https://github.com/iodeOS/ota/releases/tag/v2-beyond0lte) | [recovery for S10+](https://github.com/iodeOS/ota/releases/tag/v2-beyond2lte) with command: heimdall flash --RECOVERY <recovery_filename>.img
 6. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
-7. Sideload flash iodéOS for S10 | iodéOS for S10e | iodéOS for S10+
+7. Sideload flash [iodéOS for S10](https://github.com/iodeOS/ota/releases/tag/v2-beyond1lte) | [iodéOS for S10e](https://github.com/iodeOS/ota/releases/tag/v2-beyond0lte) | [iodéOS for S10+](https://github.com/iodeOS/ota/releases/tag/v2-beyond2lte)
 8. Format data
 
 ## Note 10, Note 10+
@@ -112,9 +112,9 @@ The objectives in the conception of this ROM are threefold:
 2. Unlock OEM in developer settings
 3. Activate adb and type: 'adb reboot bootloader', or shut down phone &  press vol+/vol- buttons altogether while plugging to computer
 4. In Download Mode (DL), long press Vol+ and unlock bootloader
-5. Reboot to DL mode & flash recovery for Note10 | recovery for Note10+ with command: heimdall flash --RECOVERY <recovery_filename>.img
+5. Reboot to DL mode & flash [recovery for Note 10](https://github.com/iodeOS/ota/releases/tag/v2-d1) | [recovery for Note 10+](https://github.com/iodeOS/ota/releases/tag/v2-d2s) with command: heimdall flash --RECOVERY <recovery_filename>.img
 6. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
-7. Sideload flash iodéOS for Note10 | iodéOS for Note10+
+7. Sideload flash iodéOS for [iodéOS for Note 10](https://github.com/iodeOS/ota/releases/tag/v2-d1) | [iodéOS for Note 10+](https://github.com/iodeOS/ota/releases/tag/v2-d2s)
 8. Format data
 
 # How to flash Sony Xperia (XA2, XZ1, XZ2, XZ3)
