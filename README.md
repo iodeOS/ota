@@ -46,9 +46,9 @@ The objectives in the conception of this ROM are threefold:
 1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone-3/)
 1. adb reboot bootloader (or press VOLUME DOWN and plug phone while it's shut down)
 1. fastboot oem unlock
-1. fastboot flash boot [recovery for FP3(+)](https://github.com/iodeOS/ota/releases/download/v1-FP3/recovery.img)
+1. fastboot flash boot [recovery for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3)
 1. press POWER+VOLUME UP until reboot in recovery
-1. Sideload flash [iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v1-FP3)
+1. Sideload flash [iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3)
 1. Format data
 1. fastboot oem lock
 
