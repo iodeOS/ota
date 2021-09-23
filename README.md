@@ -74,15 +74,15 @@ The objectives in the conception of this ROM are threefold:
 
 # How to flash Samsung
 
-## A5 (2017)
+## A5 (2017), A7 (2017)
 
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Reboot and press power/vol-/home buttons altogether.
-1. Flash [twrp for A5](https://github.com/iodeOS/ota/releases/download/v1-a5y17lte/twrp-3.5.0_9-0-a5y17lte.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
+1. Flash [recovery for A5](https://github.com/iodeOS/ota/releases/tag/v2-a5y17lte) | [recovery for A7](https://github.com/iodeOS/ota/releases/tag/v2-a7y17lte) with command: heimdall flash --RECOVERY <recovery_filename>.img
 1. As soon as the flash ends, quickly press power/vol+/home buttons altogether to directly reboot to recovery
 1. From TWRP => Wipe => Format Data: type 'yes'
-1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; (the rom image can be [found here](https://github.com/iodeOS/ota/releases/tag/v1-a5y17lte))
+1. From TWRP => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; [iodé for A5](https://github.com/iodeOS/ota/releases/tag/v2-a5y17lte) | [iodé for A7](https://github.com/iodeOS/ota/releases/tag/v2-a7y17lte)
 
 ## S9, S9+, Note9
 
