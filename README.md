@@ -124,10 +124,18 @@ The objectives in the conception of this ROM are threefold:
 1. adb reboot bootloader (or press VOLUME UP and plug phone while it's shut down)
 1. fastboot oem unlock 0x&lt;unlock code&gt;
 1. Following your device:
-   * XA2: fastboot flash boot_a | boot_b [boot-pioneer.img](https://github.com/iodeOS/ota/releases/download/v2-pioneer/boot-pioneer.img)
-   * XZ1: fastboot flash recovery [recovery-poplar.img](https://github.com/iodeOS/ota/releases/download/v2-poplar/recovery-poplar.img)
-   * XZ2: fastboot flash boot_a | boot_b [boot-akari.img](https://github.com/iodeOS/ota/releases/download/v2-akari/boot-akari.img)
-   * XZ3: fastboot flash boot_a | boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/download/v2-akatsuki/boot-akatsuki.img)
+   * XA2:  
+ fastboot flash boot_a [boot-pioneer.img](https://github.com/iodeOS/ota/releases/download/v2-pioneer/boot-pioneer.img)  
+ fastboot flash boot_b [boot-pioneer.img](https://github.com/iodeOS/ota/releases/download/v2-pioneer/boot-pioneer.img)
+   * XZ1:  
+fastboot flash recovery [recovery-poplar.img](https://github.com/iodeOS/ota/releases/download/v2-poplar/recovery-poplar.img)
+   * XZ2:  
+fastboot flash boot_a [boot-akari.img](https://github.com/iodeOS/ota/releases/download/v2-akari/boot-akari.img)  
+fastboot flash boot_b [boot-akari.img](https://github.com/iodeOS/ota/releases/download/v2-akari/boot-akari.img)
+   * XZ3:  
+fastboot flash boot_a [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/download/v2-akatsuki/boot-akatsuki.img)  
+fastboot flash boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/download/v2-akatsuki/boot-akatsuki.img)
+
 
 ## XA2, XZ1, XZ2
 
