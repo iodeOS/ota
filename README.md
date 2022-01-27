@@ -125,16 +125,16 @@ The objectives in the conception of this ROM are threefold:
 1. fastboot oem unlock 0x&lt;unlock code&gt;
 1. Following your device:
    * XA2:  
- fastboot flash boot_a [boot-pioneer.img](https://github.com/iodeOS/ota/releases/download/v2-pioneer/boot-pioneer.img)  
- fastboot flash boot_b [boot-pioneer.img](https://github.com/iodeOS/ota/releases/download/v2-pioneer/boot-pioneer.img)
+ fastboot flash boot_a [boot-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v2-pioneer)  
+ fastboot flash boot_b [boot-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v2-pioneer)
    * XZ1:  
-fastboot flash recovery [recovery-poplar.img](https://github.com/iodeOS/ota/releases/download/v2-poplar/recovery-poplar.img)
+fastboot flash recovery [recovery-poplar.img](https://github.com/iodeOS/ota/releases/tag/v2-poplar)
    * XZ2:  
-fastboot flash boot_a [boot-akari.img](https://github.com/iodeOS/ota/releases/download/v2-akari/boot-akari.img)  
-fastboot flash boot_b [boot-akari.img](https://github.com/iodeOS/ota/releases/download/v2-akari/boot-akari.img)
+fastboot flash boot_a [boot-akari.img](https://github.com/iodeOS/ota/releases/tag/v2-akari)  
+fastboot flash boot_b [boot-akari.img](https://github.com/iodeOS/ota/releases/tag/v2-akari)
    * XZ3:  
-fastboot flash boot_a [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/download/v2-akatsuki/boot-akatsuki.img)  
-fastboot flash boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/download/v2-akatsuki/boot-akatsuki.img)
+fastboot flash boot_a [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v2-akatsuki)  
+fastboot flash boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v2-akatsuki)
 
 
 ## XA2, XZ1, XZ2
@@ -149,4 +149,4 @@ fastboot flash boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases
 1. Unplug the phone
 1. press POWER+VOLUME DOWN until reboot in recovery
 2. From recovery => Factory reset  => Format Data
-3. From recovery => Apply update => Apply from ADB => ADB Sideload [iodé for XZ3](https://github.com/iodeOS/ota/releases/tag/v2-akatsuki)
+3. From recovery => Apply update => Apply from ADB => ADB Sideload [iodé .zip for XZ3](https://github.com/iodeOS/ota/releases/tag/v2-akatsuki)
