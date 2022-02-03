@@ -56,9 +56,13 @@ The objectives in the conception of this ROM are threefold:
 # How to flash Teracube (2E)
 
 1. Update the stock firmware to the latest
-2. Unlock your phone & install TWRP [from Teracube’s forum](https://community.myteracube.com/t/advanced-users-only-twrp-recovery-root-for-teracube-2e/1729)
-3. Sideload flash [iodéOS for E2](https://github.com/iodeOS/ota/releases/tag/v1-2e)
-4. Format data
+1. Unlock OEM in developer settings
+1. Reboot to bootloader
+2. fastboot flashing unlock
+3. fastboot flash recovery [recovery for 2E](https://github.com/iodeOS/ota/releases/tag/v1-2e)
+4. Reboot to recovery
+5. Sideload flash [iodéOS for 2E](https://github.com/iodeOS/ota/releases/tag/v1-2e)
+6. Format data
 
 
 
