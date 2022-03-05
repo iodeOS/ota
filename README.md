@@ -77,7 +77,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 
 
 
-# How to flash Xiaomi (Mi9, Mi 10 LITE, Mi 10T (Pro))
+# How to flash Xiaomi (Mi9, Mi 10 LITE, Mi 10T (Pro), Redmi K30S Ultra)
 
 1. Update the stock firmware to the latest
 1. Unlock your phone by following the instructions from [Xiaomi website](https://en.miui.com/unlock/download_en.html)
