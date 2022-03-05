@@ -59,8 +59,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. fastboot oem unlock
 1. fastboot flash boot [recovery for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3)
 1. press POWER+VOLUME UP until reboot in recovery
-1. Sideload flash [iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3)
-1. Format data
+1. From recovery => Factory reset => Format Data/factory reset
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; [iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3)
 1. fastboot oem lock
 
 
@@ -73,7 +73,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 3. fastboot flash recovery [recovery for 2E](https://github.com/iodeOS/ota/releases/tag/v1-2e)
 4. Reboot to recovery
 5. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt;  flash [iodéOS for 2E](https://github.com/iodeOS/ota/releases/tag/v2-2e)
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; [iodéOS for 2E](https://github.com/iodeOS/ota/releases/tag/v2-2e)
 
 
 
