@@ -96,8 +96,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Reboot and press power/vol-/home buttons altogether.
 1. Flash [recovery for A5](https://github.com/iodeOS/ota/releases/tag/v2-a5y17lte) | [recovery for A7](https://github.com/iodeOS/ota/releases/tag/v2-a7y17lte) with command: heimdall flash --RECOVERY <recovery_filename>.img
 1. As soon as the flash ends, quickly press power/vol+/home buttons altogether to directly reboot to recovery
-From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; [iodé for A5](https://github.com/iodeOS/ota/releases/tag/v2-a5y17lte) | [iodé for A7](https://github.com/iodeOS/ota/releases/tag/v2-a7y17lte)
+2. From recovery => Factory reset => Format Data/factory reset
+3. From recovery => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; [iodé for A5](https://github.com/iodeOS/ota/releases/tag/v2-a5y17lte) | [iodé for A7](https://github.com/iodeOS/ota/releases/tag/v2-a7y17lte)
 
 ## S9, S9+, Note9
 
