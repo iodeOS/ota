@@ -156,7 +156,7 @@ fastboot flash boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases
 
 1. Unplug the phone
 1. press POWER+VOLUME DOWN until reboot in recovery
-From recovery => Factory reset => Format Data/factory reset
+1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; (the rom image can be found here: [XA2](https://github.com/iodeOS/ota/releases/tag/v2-pioneer), [XZ1](https://github.com/iodeOS/ota/releases/tag/v2-poplar), [XZ2](https://github.com/iodeOS/ota/releases/tag/v2-akari))
 
 ## XZ3 
