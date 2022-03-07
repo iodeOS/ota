@@ -64,7 +64,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. fastboot oem lock
 
 
-# How to flash Teracube (2E)
+# How to flash Teracube (2E sold before 2022: not compatible with 2022 devices)
 
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
