@@ -57,7 +57,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone-3/)
 1. adb reboot bootloader (or press VOLUME DOWN and plug phone while it's shut down)
 1. (FP3) fastboot oem unlock, (FP4) fastboot flashing unlock
-1. (fp3) fastboot flash boot [recovery for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3), (fp4) fastboot flash recovery [recovery for FP4](https://github.com/iodeOS/ota/releases/tag/v2-FP4) | 
+1. (FP3) fastboot flash boot [recovery for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3), (FP4) fastboot flash recovery [recovery for FP4](https://github.com/iodeOS/ota/releases/tag/v2-FP4)
 1. (FP4 only) In order to relock bootloader: fastboot flash avb_custom_key [avb_custom_key-FP4.bin](https://github.com/iodeOS/ota/releases/download/v2-FP4/avb_custom_key-FP4.bin)
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
