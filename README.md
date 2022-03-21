@@ -58,6 +58,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. adb reboot bootloader (or press VOLUME DOWN and plug phone while it's shut down)
 1. fastboot oem unlock
 1. fastboot flash boot [recovery for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3) | [recovery for FP4](https://github.com/iodeOS/ota/releases/tag/v2-FP4) | 
+1. (FP4 only) In order to relock bootloader: fastboot flash avb_custom_key [avb_custom_key-FP4.bin](https://github.com/iodeOS/ota/releases/download/v2-FP4/avb_custom_key-FP4.bin)
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; [iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3) | [iodéOS for FP4](https://github.com/iodeOS/ota/releases/tag/v2-FP4)
@@ -96,8 +97,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Reboot and press power/vol-/home buttons altogether.
 1. Flash [recovery for A5](https://github.com/iodeOS/ota/releases/tag/v2-a5y17lte) | [recovery for A7](https://github.com/iodeOS/ota/releases/tag/v2-a7y17lte) with command: heimdall flash --RECOVERY <recovery_filename>.img
 1. As soon as the flash ends, quickly press power/vol+/home buttons altogether to directly reboot to recovery
-2. From recovery => Factory reset => Format Data/factory reset
-3. From recovery => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; [iodé for A5](https://github.com/iodeOS/ota/releases/tag/v2-a5y17lte) | [iodé for A7](https://github.com/iodeOS/ota/releases/tag/v2-a7y17lte)
+1. From recovery => Factory reset => Format Data/factory reset
+1. From recovery => Advanced => ADB Sideload: swipe to start sideload, and issue adb sideload &lt;rom.zip&gt; [iodé for A5](https://github.com/iodeOS/ota/releases/tag/v2-a5y17lte) | [iodé for A7](https://github.com/iodeOS/ota/releases/tag/v2-a7y17lte)
 
 ## S9, S9+, Note9
 
