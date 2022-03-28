@@ -79,7 +79,20 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP4](https://github.com/iodeOS/ota/releases/tag/v2-FP4)&gt;
 1. fastboot flashing lock
 
-# How to flash Teracube (2E sold before 2022: not compatible with 2022 devices)
+# How to flash Teracube
+
+## 2E 2021 batch
+
+1. Update the stock firmware to the latest
+1. Unlock OEM in developer settings
+1. Reboot to bootloader
+2. fastboot flashing unlock
+3. fastboot flash boot &lt;[recovery for 2E](https://github.com/iodeOS/ota/releases/tag/v2-emerald)&gt;
+4. Reboot to recovery
+5. From recovery => Factory reset => Format Data/factory reset
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for 2E](https://github.com/iodeOS/ota/releases/tag/v2-emerald)&gt;
+
+## 2E 2022 batch (emerald)
 
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
