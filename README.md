@@ -81,7 +81,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 
 # How to flash Teracube
 
-## 2E 2021 batch
+## 2E 2022 batch (emerald)
 
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
@@ -92,7 +92,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 5. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for 2E](https://github.com/iodeOS/ota/releases/tag/v2-emerald)&gt;
 
-## 2E 2022 batch (emerald)
+## 2E 2021 batch
 
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
