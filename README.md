@@ -63,7 +63,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3)&gt;
-1. fastboot oem lock
+2. Reboot to bootloader
+3. fastboot oem lock
 
 # FP4
 
@@ -77,7 +78,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP4](https://github.com/iodeOS/ota/releases/tag/v2-FP4)&gt;
-1. fastboot flashing lock
+2. Reboot to bootloader
+3. fastboot flashing lock
 
 # How to flash Teracube
 
