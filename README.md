@@ -63,8 +63,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3)&gt;
-2. Reboot to bootloader
-3. fastboot oem lock
+1. fastboot oem lock
 
 # FP4
 
@@ -78,8 +77,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP4](https://github.com/iodeOS/ota/releases/tag/v2-FP4)&gt;
-2. Reboot to bootloader
-3. fastboot flashing lock
+1. fastboot flashing lock
+1. Boot, and in developer settings uncheck "OEM unlocking"
 
 # How to flash Teracube
 
@@ -88,10 +87,10 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Reboot to bootloader
-2. fastboot flashing unlock
-3. fastboot flash boot &lt;[recovery for 2E](https://github.com/iodeOS/ota/releases/tag/v2-emerald)&gt;
-4. Reboot to recovery
-5. From recovery => Factory reset => Format Data/factory reset
+1. fastboot flashing unlock
+1. fastboot flash boot &lt;[recovery for 2E](https://github.com/iodeOS/ota/releases/tag/v2-emerald)&gt;
+1. Reboot to recovery
+1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for 2E](https://github.com/iodeOS/ota/releases/tag/v2-emerald)&gt;
 
 ## 2E 2021 batch
@@ -99,10 +98,10 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Reboot to bootloader
-2. fastboot flashing unlock
-3. fastboot flash recovery &lt;[recovery for 2E](https://github.com/iodeOS/ota/releases/tag/v2-2e)&gt;
-4. Reboot to recovery
-5. From recovery => Factory reset => Format Data/factory reset
+1. fastboot flashing unlock
+1. fastboot flash recovery &lt;[recovery for 2E](https://github.com/iodeOS/ota/releases/tag/v2-2e)&gt;
+1. Reboot to recovery
+1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for 2E](https://github.com/iodeOS/ota/releases/tag/v2-2e)&gt;
 
 
@@ -143,24 +142,24 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 ## S10, S10e, S10+
 
 1. Update the stock firmware to the latest
-2. Unlock OEM in developer settings
-3. Activate adb and type: 'adb reboot bootloader', or shut down phone &  press vol-/bixby buttons altogether while plugging to computer
-4. In Download Mode (DL), long press Vol+ and unlock bootloader
-5. Reboot to DL mode & flash [recovery for S10](https://github.com/iodeOS/ota/releases/tag/v2-beyond1lte) | [recovery for S10e](https://github.com/iodeOS/ota/releases/tag/v2-beyond0lte) | [recovery for S10+](https://github.com/iodeOS/ota/releases/tag/v2-beyond2lte) with command: heimdall flash --RECOVERY <recovery_filename>.img
-6. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
-7. From recovery => Factory reset => Format Data/factory reset
+1. Unlock OEM in developer settings
+1. Activate adb and type: 'adb reboot bootloader', or shut down phone &  press vol-/bixby buttons altogether while plugging to computer
+1. In Download Mode (DL), long press Vol+ and unlock bootloader
+1. Reboot to DL mode & flash [recovery for S10](https://github.com/iodeOS/ota/releases/tag/v2-beyond1lte) | [recovery for S10e](https://github.com/iodeOS/ota/releases/tag/v2-beyond0lte) | [recovery for S10+](https://github.com/iodeOS/ota/releases/tag/v2-beyond2lte) with command: heimdall flash --RECOVERY <recovery_filename>.img
+1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
+1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for S10](https://github.com/iodeOS/ota/releases/tag/v2-beyond1lte) | [iodéOS for S10e](https://github.com/iodeOS/ota/releases/tag/v2-beyond0lte) | [iodéOS for S10+](https://github.com/iodeOS/ota/releases/tag/v2-beyond2lte))
 
 ## Note 10, Note 10+
 
 1. Update the stock firmware to the latest
-2. Unlock OEM in developer settings
-3. Activate adb and type: 'adb reboot bootloader', or shut down phone &  press vol+/vol- buttons altogether while plugging to computer
-4. In Download Mode (DL), long press Vol+ and unlock bootloader
-5. Reboot to DL mode & flash [recovery for Note 10](https://github.com/iodeOS/ota/releases/tag/v2-d1) | [recovery for Note 10+](https://github.com/iodeOS/ota/releases/tag/v2-d2s) with command: heimdall flash --RECOVERY <recovery_filename>.img
-6. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
-7. From recovery => Factory reset => Format Data/factory reset
-8. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for Note 10](https://github.com/iodeOS/ota/releases/tag/v2-d1) | [iodéOS for Note 10+](https://github.com/iodeOS/ota/releases/tag/v2-d2s))
+1. Unlock OEM in developer settings
+1. Activate adb and type: 'adb reboot bootloader', or shut down phone &  press vol+/vol- buttons altogether while plugging to computer
+1. In Download Mode (DL), long press Vol+ and unlock bootloader
+1. Reboot to DL mode & flash [recovery for Note 10](https://github.com/iodeOS/ota/releases/tag/v2-d1) | [recovery for Note 10+](https://github.com/iodeOS/ota/releases/tag/v2-d2s) with command: heimdall flash --RECOVERY <recovery_filename>.img
+1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
+1. From recovery => Factory reset => Format Data/factory reset
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for Note 10](https://github.com/iodeOS/ota/releases/tag/v2-d1) | [iodéOS for Note 10+](https://github.com/iodeOS/ota/releases/tag/v2-d2s))
 
 # How to flash Sony Xperia (XA2, XZ1, XZ2, XZ3)
 
@@ -193,5 +192,5 @@ fastboot flash boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases
 
 1. Unplug the phone
 1. press POWER+VOLUME DOWN until reboot in recovery
-2. From recovery => Factory reset  => Format Data
-3. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for XZ3](https://github.com/iodeOS/ota/releases/tag/v2-akatsuki)&gt;
+1. From recovery => Factory reset  => Format Data
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for XZ3](https://github.com/iodeOS/ota/releases/tag/v2-akatsuki)&gt;
