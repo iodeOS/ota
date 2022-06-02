@@ -68,16 +68,18 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 # FP4
 
 1. Update the stock firmware to the latest
-1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone-3/)
+1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone-3/), but **do not unlock critical partitions** (do not execute 'fastboot flashing unlock_critical').
 1. adb reboot bootloader (or press VOLUME DOWN and plug phone while it's shut down)
 1. fastboot flashing unlock
-1. fastboot flash recovery_a &lt;[recovery for FP4](https://github.com/iodeOS/ota/releases/tag/v2-FP4)&gt;  
-   fastboot flash recovery_b &lt;[recovery for FP4](https://github.com/iodeOS/ota/releases/tag/v2-FP4)&gt;
-1. In order to relock bootloader: fastboot flash avb_custom_key &lt;[avb_custom_key-FP4.bin](https://github.com/iodeOS/ota/releases/download/v2-FP4/avb_custom_key-FP4.bin)&gt;
+1. fastboot flash recovery_a &lt;[recovery for FP4](https://github.com/iodeOS/ota/releases/tag/v3-FP4)&gt;  
+   fastboot flash recovery_b &lt;[recovery for FP4](https://github.com/iodeOS/ota/releases/tag/v3-FP4)&gt;
+1. In order to relock bootloader: fastboot flash avb_custom_key &lt;[avb_custom_key-FP4.bin](https://github.com/iodeOS/ota/releases/download/v3-FP4/avb_custom_key-FP4.bin)&gt;
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP4](https://github.com/iodeOS/ota/releases/tag/v2-FP4)&gt;
-1. fastboot flashing lock
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP4](https://github.com/iodeOS/ota/releases/tag/v3-FP4)&gt;
+1. Reboot to booloader
+1  Execute 'fastboot flashing get_unlock_ability'. It it returns 'get_unlock_ability: 0': **do not try to relock the bootloader (steps below)**
+1. If previous step returned 'get_unlock_ability: 1': fastboot flashing lock
 1. Boot, and in developer settings uncheck "OEM unlocking"
 
 # How to flash Teracube
@@ -145,10 +147,10 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Unlock OEM in developer settings
 1. Activate adb and type: 'adb reboot bootloader', or shut down phone &  press vol-/bixby buttons altogether while plugging to computer
 1. In Download Mode (DL), long press Vol+ and unlock bootloader
-1. Reboot to DL mode & flash [recovery for S10](https://github.com/iodeOS/ota/releases/tag/v2-beyond1lte) | [recovery for S10e](https://github.com/iodeOS/ota/releases/tag/v2-beyond0lte) | [recovery for S10+](https://github.com/iodeOS/ota/releases/tag/v2-beyond2lte) with command: heimdall flash --RECOVERY <recovery_filename>.img
+1. Reboot to DL mode & flash [recovery for S10](https://github.com/iodeOS/ota/releases/tag/v3-beyond1lte) | [recovery for S10e](https://github.com/iodeOS/ota/releases/tag/v3-beyond0lte) | [recovery for S10+](https://github.com/iodeOS/ota/releases/tag/v3-beyond2lte) with command: heimdall flash --RECOVERY <recovery_filename>.img
 1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for S10](https://github.com/iodeOS/ota/releases/tag/v2-beyond1lte) | [iodéOS for S10e](https://github.com/iodeOS/ota/releases/tag/v2-beyond0lte) | [iodéOS for S10+](https://github.com/iodeOS/ota/releases/tag/v2-beyond2lte))
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for S10](https://github.com/iodeOS/ota/releases/tag/v3-beyond1lte) | [iodéOS for S10e](https://github.com/iodeOS/ota/releases/tag/v3-beyond0lte) | [iodéOS for S10+](https://github.com/iodeOS/ota/releases/tag/v3-beyond2lte))
 
 ## Note 10, Note 10+
 
@@ -156,10 +158,10 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Unlock OEM in developer settings
 1. Activate adb and type: 'adb reboot bootloader', or shut down phone &  press vol+/vol- buttons altogether while plugging to computer
 1. In Download Mode (DL), long press Vol+ and unlock bootloader
-1. Reboot to DL mode & flash [recovery for Note 10](https://github.com/iodeOS/ota/releases/tag/v2-d1) | [recovery for Note 10+](https://github.com/iodeOS/ota/releases/tag/v2-d2s) with command: heimdall flash --RECOVERY <recovery_filename>.img
+1. Reboot to DL mode & flash [recovery for Note 10](https://github.com/iodeOS/ota/releases/tag/v3-d1) | [recovery for Note 10+](https://github.com/iodeOS/ota/releases/tag/v3-d2s) with command: heimdall flash --RECOVERY <recovery_filename>.img
 1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for Note 10](https://github.com/iodeOS/ota/releases/tag/v2-d1) | [iodéOS for Note 10+](https://github.com/iodeOS/ota/releases/tag/v2-d2s))
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for Note 10](https://github.com/iodeOS/ota/releases/tag/v3-d1) | [iodéOS for Note 10+](https://github.com/iodeOS/ota/releases/tag/v3-d2s))
 
 # How to flash Sony Xperia (XA2, XZ1, XZ2, XZ3)
 
@@ -169,8 +171,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. fastboot oem unlock 0x&lt;unlock code&gt;
 1. Following your device:
    * XA2:  
- fastboot flash boot_a [boot-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v2-pioneer)  
- fastboot flash boot_b [boot-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v2-pioneer)
+fastboot flash boot_a [boot-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v3-pioneer)  
+fastboot flash boot_b [boot-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v3-pioneer)
    * XZ1:  
 fastboot flash recovery [recovery-poplar.img](https://github.com/iodeOS/ota/releases/tag/v2-poplar)
    * XZ2:  
@@ -186,7 +188,7 @@ fastboot flash boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases
 1. Unplug the phone
 1. press POWER+VOLUME DOWN until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for XA2](https://github.com/iodeOS/ota/releases/tag/v2-pioneer) | [iodéOS for XZ1](https://github.com/iodeOS/ota/releases/tag/v2-poplar) | [iodéOS for XZ2](https://github.com/iodeOS/ota/releases/tag/v2-akari))
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for XA2](https://github.com/iodeOS/ota/releases/tag/v3-pioneer) | [iodéOS for XZ1](https://github.com/iodeOS/ota/releases/tag/v2-poplar) | [iodéOS for XZ2](https://github.com/iodeOS/ota/releases/tag/v2-akari))
 
 ## XZ3 
 
