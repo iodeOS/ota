@@ -174,7 +174,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 fastboot flash boot_a [boot-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v3-pioneer)  
 fastboot flash boot_b [boot-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v3-pioneer)
    * XZ1:  
-fastboot flash recovery [recovery-poplar.img](https://github.com/iodeOS/ota/releases/tag/v2-poplar)
+fastboot flash recovery [recovery-poplar.img](https://github.com/iodeOS/ota/releases/tag/v3-poplar)
    * XZ2:  
 fastboot flash boot_a [boot-akari.img](https://github.com/iodeOS/ota/releases/tag/v2-akari)  
 fastboot flash boot_b [boot-akari.img](https://github.com/iodeOS/ota/releases/tag/v2-akari)
@@ -188,7 +188,7 @@ fastboot flash boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases
 1. Unplug the phone
 1. press POWER+VOLUME DOWN until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for XA2](https://github.com/iodeOS/ota/releases/tag/v3-pioneer) | [iodéOS for XZ1](https://github.com/iodeOS/ota/releases/tag/v2-poplar) | [iodéOS for XZ2](https://github.com/iodeOS/ota/releases/tag/v2-akari))
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for XA2](https://github.com/iodeOS/ota/releases/tag/v3-pioneer) | [iodéOS for XZ1](https://github.com/iodeOS/ota/releases/tag/v3-poplar) | [iodéOS for XZ2](https://github.com/iodeOS/ota/releases/tag/v2-akari))
 
 ## XZ3 
 
