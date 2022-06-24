@@ -113,10 +113,10 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Update the stock firmware to the latest
 1. Unlock your phone by following the instructions from [Xiaomi website](https://en.miui.com/unlock/download_en.html)
 1. adb reboot bootloader (or press power+VOLUME DOWN)
-1. fastboot flash recovery [iodé mi9 recovery image](https://github.com/iodeOS/ota/releases/tag/v1-cepheus) | [iodé Mi 10 LITE recovery image](https://github.com/iodeOS/ota/releases/tag/v2-monet) | [iodé Mi10T (pro) recovery image](https://github.com/iodeOS/ota/releases/tag/v2-apollon)
+1. fastboot flash recovery [iodé mi9 recovery image](https://github.com/iodeOS/ota/releases/tag/v3-cepheus) | [iodé Mi 10 LITE recovery image](https://github.com/iodeOS/ota/releases/tag/v2-monet) | [iodé Mi10T (pro) recovery image](https://github.com/iodeOS/ota/releases/tag/v2-apollon)
 1. Press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for Mi 9](https://github.com/iodeOS/ota/releases/tag/v1-cepheus) | [iodéOS for Mi 10 lite](https://github.com/iodeOS/ota/releases/tag/v2-monet) | [iodéOS for Mi 10T (pro) zip ROM ](https://github.com/iodeOS/ota/releases/tag/v2-apollon))
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for Mi 9](https://github.com/iodeOS/ota/releases/tag/v3-cepheus) | [iodéOS for Mi 10 lite](https://github.com/iodeOS/ota/releases/tag/v2-monet) | [iodéOS for Mi 10T (pro) zip ROM ](https://github.com/iodeOS/ota/releases/tag/v2-apollon))
 
 # How to flash Samsung
 
