@@ -171,16 +171,16 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. fastboot oem unlock 0x&lt;unlock code&gt;
 1. Following your device:
    * XA2:  
-fastboot flash boot_a [boot-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v3-pioneer)  
-fastboot flash boot_b [boot-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v3-pioneer)
+fastboot flash boot_a [recovery-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v3-pioneer)  
+fastboot flash boot_b [recovery-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v3-pioneer)
    * XZ1:  
 fastboot flash recovery [recovery-poplar.img](https://github.com/iodeOS/ota/releases/tag/v3-poplar)
    * XZ2:  
-fastboot flash boot_a [boot-akari.img](https://github.com/iodeOS/ota/releases/tag/v3-akari)  
-fastboot flash boot_b [boot-akari.img](https://github.com/iodeOS/ota/releases/tag/v3-akari)
+fastboot flash boot_a [recovery-akari.img](https://github.com/iodeOS/ota/releases/tag/v3-akari)  
+fastboot flash boot_b [recovery-akari.img](https://github.com/iodeOS/ota/releases/tag/v3-akari)
    * XZ3:  
-fastboot flash boot_a [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v3-akatsuki)  
-fastboot flash boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v3-akatsuki)
+fastboot flash boot_a [recovery-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v3-akatsuki)  
+fastboot flash boot_b [recovery-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v3-akatsuki)
 
 
 ## XA2, XZ1, XZ2
