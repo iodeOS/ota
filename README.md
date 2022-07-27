@@ -59,10 +59,10 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone-3/)
 1. adb reboot bootloader (or press VOLUME DOWN and plug phone while it's shut down)
 1. fastboot oem unlock
-1. fastboot flash boot &lt;[recovery for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3)&gt;
+1. fastboot flash boot &lt;[recovery for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v3-FP3)&gt;
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v2-FP3)&gt;
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v3-FP3)&gt;
 1. fastboot oem lock
 
 # FP4
@@ -113,10 +113,10 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Update the stock firmware to the latest
 1. Unlock your phone by following the instructions from [Xiaomi website](https://en.miui.com/unlock/download_en.html)
 1. adb reboot bootloader (or press power+VOLUME DOWN)
-1. fastboot flash recovery [iodé mi9 recovery image](https://github.com/iodeOS/ota/releases/tag/v3-cepheus) | [iodé Mi 10 LITE recovery image](https://github.com/iodeOS/ota/releases/tag/v2-monet) | [iodé Mi10T (pro) recovery image](https://github.com/iodeOS/ota/releases/tag/v2-apollon)
+1. fastboot flash recovery [iodé mi9 recovery image](https://github.com/iodeOS/ota/releases/tag/v3-cepheus) | [iodé Mi 10 LITE recovery image](https://github.com/iodeOS/ota/releases/tag/v3-monet) | [iodé Mi10T (pro) recovery image](https://github.com/iodeOS/ota/releases/tag/v3-apollon)
 1. Press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for Mi 9](https://github.com/iodeOS/ota/releases/tag/v3-cepheus) | [iodéOS for Mi 10 lite](https://github.com/iodeOS/ota/releases/tag/v2-monet) | [iodéOS for Mi 10T (pro) zip ROM ](https://github.com/iodeOS/ota/releases/tag/v2-apollon))
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for Mi 9](https://github.com/iodeOS/ota/releases/tag/v3-cepheus) | [iodéOS for Mi 10 lite](https://github.com/iodeOS/ota/releases/tag/v3-monet) | [iodéOS for Mi 10T (pro) zip ROM ](https://github.com/iodeOS/ota/releases/tag/v3-apollon))
 
 # How to flash Samsung
 
@@ -136,10 +136,10 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Unlock OEM in developer settings
 1. At reboot, follow the setup wizard, make sure to be connected to the internet, then activate developer options
 1. Activate adb and type: 'adb reboot bootloader', or press  power/vol-/bixby buttons altogether.
-1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/download/v2-starlte/recovery-starlte.img) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/download/v2-star2lte/recovery-star2lte.img) or [recovery for Note9](https://github.com/iodeOS/ota/releases/download/v2-crownlte/recovery-crownlte.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
+1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/download/v3-starlte/recovery-starlte.img) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/download/v3-star2lte/recovery-star2lte.img) or [recovery for Note9](https://github.com/iodeOS/ota/releases/download/v3-crownlte/recovery-crownlte.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
 1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for S9](https://github.com/iodeOS/ota/releases/tag/v2-starlte) | [iodéOS for S9+](https://github.com/iodeOS/ota/releases/tag/v2-star2lte) | [iodéOS for Note9](https://github.com/iodeOS/ota/releases/tag/v2-crownlte))
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for S9](https://github.com/iodeOS/ota/releases/tag/v3-starlte) | [iodéOS for S9+](https://github.com/iodeOS/ota/releases/tag/v3-star2lte) | [iodéOS for Note9](https://github.com/iodeOS/ota/releases/tag/v3-crownlte))
 
 ## S10, S10e, S10+
 
@@ -176,11 +176,11 @@ fastboot flash boot_b [boot-pioneer.img](https://github.com/iodeOS/ota/releases/
    * XZ1:  
 fastboot flash recovery [recovery-poplar.img](https://github.com/iodeOS/ota/releases/tag/v3-poplar)
    * XZ2:  
-fastboot flash boot_a [boot-akari.img](https://github.com/iodeOS/ota/releases/tag/v2-akari)  
-fastboot flash boot_b [boot-akari.img](https://github.com/iodeOS/ota/releases/tag/v2-akari)
+fastboot flash boot_a [boot-akari.img](https://github.com/iodeOS/ota/releases/tag/v3-akari)  
+fastboot flash boot_b [boot-akari.img](https://github.com/iodeOS/ota/releases/tag/v3-akari)
    * XZ3:  
-fastboot flash boot_a [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v2-akatsuki)  
-fastboot flash boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v2-akatsuki)
+fastboot flash boot_a [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v3-akatsuki)  
+fastboot flash boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v3-akatsuki)
 
 
 ## XA2, XZ1, XZ2
@@ -188,11 +188,11 @@ fastboot flash boot_b [boot-akatsuki.img](https://github.com/iodeOS/ota/releases
 1. Unplug the phone
 1. press POWER+VOLUME DOWN until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for XA2](https://github.com/iodeOS/ota/releases/tag/v3-pioneer) | [iodéOS for XZ1](https://github.com/iodeOS/ota/releases/tag/v3-poplar) | [iodéOS for XZ2](https://github.com/iodeOS/ota/releases/tag/v2-akari))
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for XA2](https://github.com/iodeOS/ota/releases/tag/v3-pioneer) | [iodéOS for XZ1](https://github.com/iodeOS/ota/releases/tag/v3-poplar) | [iodéOS for XZ2](https://github.com/iodeOS/ota/releases/tag/v3-akari))
 
 ## XZ3 
 
 1. Unplug the phone
 1. press POWER+VOLUME DOWN until reboot in recovery
 1. From recovery => Factory reset  => Format Data
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for XZ3](https://github.com/iodeOS/ota/releases/tag/v2-akatsuki)&gt;
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for XZ3](https://github.com/iodeOS/ota/releases/tag/v3-akatsuki)&gt;
