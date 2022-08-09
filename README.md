@@ -63,6 +63,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v3-FP3)&gt;
+1. Reboot to bootloader
 1. fastboot oem lock
 1. Boot, and in developer settings uncheck "OEM unlocking"
 
@@ -78,7 +79,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP4](https://github.com/iodeOS/ota/releases/tag/v3-FP4)&gt;
-1. Reboot to booloader
+1. Reboot to bootloader
 1  Execute 'fastboot flashing get_unlock_ability'. It it returns 'get_unlock_ability: 0': **do not try to relock the bootloader (steps below)**
 1. If previous step returned 'get_unlock_ability: 1': fastboot flashing lock
 1. Boot, and in developer settings uncheck "OEM unlocking"
