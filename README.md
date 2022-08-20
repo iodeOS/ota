@@ -138,7 +138,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Unlock OEM in developer settings
 1. At reboot, follow the setup wizard, make sure to be connected to the internet, then activate developer options
 1. Activate adb and type: 'adb reboot bootloader', or press  power/vol-/bixby buttons altogether.
-1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/download/v3-starlte/recovery-starlte.img) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/download/v3-star2lte/recovery-star2lte.img) or [recovery for Note9](https://github.com/iodeOS/ota/releases/download/v3-crownlte/recovery-crownlte.img) with command: heimdall flash --RECOVERY <recovery_filename>.img
+1. Flash lineageOS [recovery for S9](https://github.com/iodeOS/ota/releases/tag/v3-starlte) or  [recovery for S9+](https://github.com/iodeOS/ota/releases/tag/v3-star2lte) or [recovery for Note9](https://github.com/iodeOS/ota/releases/tag/v3-crownlte) with command: heimdall flash --RECOVERY <recovery_filename>.img
 1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for S9](https://github.com/iodeOS/ota/releases/tag/v3-starlte) | [iodéOS for S9+](https://github.com/iodeOS/ota/releases/tag/v3-star2lte) | [iodéOS for Note9](https://github.com/iodeOS/ota/releases/tag/v3-crownlte))
