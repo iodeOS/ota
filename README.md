@@ -145,7 +145,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 
 ## S10, S10e, S10+
 
-1. Update the stock firmware to the latest
+1. Update the stock firmware to the latest one **BEFORE NOVEMBER 2022** which prevents the device to boot (or in doubt, do not upgrade). If you already have November 2022 stock ROM or above, you must downgrade your firmware. This is usually not possible, but can work by installing a stock ROM from another country.
 1. Unlock OEM in developer settings
 1. Activate adb and type: 'adb reboot bootloader', or shut down phone &  press vol-/bixby buttons altogether while plugging to computer
 1. In Download Mode (DL), long press Vol+ and unlock bootloader
