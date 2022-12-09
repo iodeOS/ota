@@ -51,6 +51,24 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 * Smart charging (disables charging when a given level is reached, to protect battery health).
 * Fingerprint vibration toggle.
 
+# How to flash Google (Pixel 5)
+
+## Pixel 5
+
+1. Update the stock firmware to the latest
+1. Unlock OEM in developer settings
+1. Reboot to bootloader (or press power + VOLUME DOWN)
+1. fastboot flashing unlock
+1. fastboot flash vendor_boot &lt;[recovery for Pixel 5](https://github.com/iodeOS/ota/releases/tag/v3-redfin)&gt;
+1. Reboot to recovery
+1. From recovery => Factory reset => Format Data/factory reset
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for Pixel 5](https://github.com/iodeOS/ota/releases/tag/v3-redfin)&gt;
+1. (optional) In order to relock bootloader: reboot to bootloader
+1. (optional) fastboot flash avb_custom_key &lt;[avb_custom_key-redfin.bin](https://github.com/iodeOS/ota/releases/download/v3-redfin/avb_custom_key-redfin.bin)&gt;
+1. (optional) fastboot flashing lock
+1. (optional) Boot, and in developer settings uncheck "OEM unlocking"
+
+
 # How to flash Fairphone (FP3, FP3+, FP4)
 
 ## FP3, FP3+
@@ -63,9 +81,9 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP3(+)](https://github.com/iodeOS/ota/releases/tag/v3-FP3)&gt;
-1. Reboot to bootloader
-1. fastboot oem lock
-1. Boot, and in developer settings uncheck "OEM unlocking"
+1. (optional) In order to relock bootloader: reboot to bootloader
+1. (optional) fastboot oem lock
+1. (optional) Boot, and in developer settings uncheck "OEM unlocking"
 
 # FP4
 
@@ -75,14 +93,16 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. fastboot flashing unlock
 1. fastboot flash recovery_a &lt;[recovery for FP4](https://github.com/iodeOS/ota/releases/tag/v3-FP4)&gt;  
    fastboot flash recovery_b &lt;[recovery for FP4](https://github.com/iodeOS/ota/releases/tag/v3-FP4)&gt;
-1. In order to relock bootloader: fastboot flash avb_custom_key &lt;[avb_custom_key-FP4.bin](https://github.com/iodeOS/ota/releases/download/v3-FP4/avb_custom_key-FP4.bin)&gt;
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP4](https://github.com/iodeOS/ota/releases/tag/v3-FP4)&gt;
-1. Reboot to bootloader
-1  Execute 'fastboot flashing get_unlock_ability'. It it returns 'get_unlock_ability: 0': **do not try to relock the bootloader (steps below)**
-1. If previous step returned 'get_unlock_ability: 1': fastboot flashing lock
-1. Boot, and in developer settings uncheck "OEM unlocking"
+1. (optional) In order to relock bootloader: reboot to bootloader
+1.  (optional) Execute 'fastboot flashing get_unlock_ability'. It it returns 'get_unlock_ability: 0': **do not try to relock the bootloader (steps below)**
+1. (optional) If previous step returned 'get_unlock_ability: 1':
+
+   (optional) fastboot flash avb_custom_key &lt;[avb_custom_key-FP4.bin](https://github.com/iodeOS/ota/releases/download/v3-FP4/avb_custom_key-FP4.bin)&gt;
+1. (optional) fastboot flashing lock
+1. (optional) Boot, and in developer settings uncheck "OEM unlocking"
 
 # How to flash Teracube
 
