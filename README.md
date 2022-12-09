@@ -51,6 +51,20 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 * Smart charging (disables charging when a given level is reached, to protect battery health).
 * Fingerprint vibration toggle.
 
+# How to flash OnePlus (OnePlus 9)
+
+## OnePlus 9
+
+1. Update the stock firmware to the latest
+1. Unlock OEM in developer settings
+1. Reboot to bootloader (or press power + VOLUME DOWN)
+1. fastboot flashing unlock
+1. fastboot flash vendor_boot &lt;[recovery for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade)&gt;
+1. fastboot flash dtbo &lt;[dtbo for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade)&gt;
+1. Reboot to recovery
+1. From recovery => Factory reset => Format Data/factory reset
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade)&gt;
+
 # How to flash Google (Pixel 5)
 
 ## Pixel 5
@@ -67,7 +81,6 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. (optional) fastboot flash avb_custom_key &lt;[avb_custom_key-redfin.bin](https://github.com/iodeOS/ota/releases/download/v3-redfin/avb_custom_key-redfin.bin)&gt;
 1. (optional) fastboot flashing lock
 1. (optional) Boot, and in developer settings uncheck "OEM unlocking"
-
 
 # How to flash Fairphone (FP3, FP3+, FP4)
 
