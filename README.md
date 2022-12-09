@@ -73,14 +73,23 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Unlock OEM in developer settings
 1. Reboot to bootloader (or press power + VOLUME DOWN)
 1. fastboot flashing unlock
+1. fastboot --set-active=a
 1. fastboot flash vendor_boot &lt;[recovery for Pixel 5](https://github.com/iodeOS/ota/releases/tag/v3-redfin)&gt;
 1. Reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for Pixel 5](https://github.com/iodeOS/ota/releases/tag/v3-redfin)&gt;
-1. (optional) In order to relock bootloader: reboot to bootloader
-1. (optional) fastboot flash avb_custom_key &lt;[avb_custom_key-redfin.bin](https://github.com/iodeOS/ota/releases/download/v3-redfin/avb_custom_key-redfin.bin)&gt;
-1. (optional) fastboot flashing lock
-1. (optional) Boot, and in developer settings uncheck "OEM unlocking"
+
+If you want to relock the bootloader, the rom must be also flashed on the other slot:
+
+1. Reboot to bootloader
+1. fastboot --set-active=b
+1. Reboot to recovery
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for Pixel 5](https://github.com/iodeOS/ota/releases/tag/v3-redfin)&gt;
+1. Reboot to bootloader
+1. fastboot erase avb_custom_key
+1. fastboot flash avb_custom_key &lt;[avb_custom_key-redfin.bin](https://github.com/iodeOS/ota/releases/download/v3-redfin/avb_custom_key-redfin.bin)&gt;
+1. fastboot flashing lock
+1. Boot, and in developer settings uncheck "OEM unlocking"
 
 # How to flash Fairphone (FP3, FP3+, FP4)
 
