@@ -65,7 +65,31 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade)&gt;
 
-# How to flash Google (Pixel 5)
+# How to flash Google (Pixel 4, Pixel 5)
+
+## Pixel 4
+
+1. Update the stock firmware to the latest
+1. Unlock OEM in developer settings
+1. Reboot to bootloader (or press power + VOLUME DOWN)
+1. fastboot flashing unlock
+1. fastboot --set-active=a
+1. fastboot flash boot &lt;[recovery for Pixel 4](https://github.com/iodeOS/ota/releases/tag/v3-flame)&gt;
+1. Reboot to recovery
+1. From recovery => Factory reset => Format Data/factory reset
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for Pixel 4](https://github.com/iodeOS/ota/releases/tag/v3-flame)&gt;
+
+If you want to relock the bootloader, the rom must be also flashed on the other slot:
+
+1. Reboot to bootloader
+1. fastboot --set-active=b
+1. Reboot to recovery
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for Pixel 4](https://github.com/iodeOS/ota/releases/tag/v3-flame)&gt;
+1. Reboot to bootloader
+1. fastboot erase avb_custom_key
+1. fastboot flash avb_custom_key &lt;[avb_custom_key-flame.bin](https://github.com/iodeOS/ota/releases/download/v3-flame/avb_custom_key-flame.bin)&gt;
+1. fastboot flashing lock
+1. Boot, and in developer settings uncheck "OEM unlocking"
 
 ## Pixel 5
 
