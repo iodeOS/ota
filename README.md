@@ -51,19 +51,19 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 * Smart charging (disables charging when a given level is reached, to protect battery health).
 * Fingerprint vibration toggle.
 
-# How to flash OnePlus (OnePlus 9)
+# How to flash OnePlus (OnePlus 9, OnePlus 9 Pro)
 
-## OnePlus 9
+## OnePlus 9 / 9 Pro
 
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Reboot to bootloader (or press power + VOLUME DOWN)
 1. fastboot flashing unlock
-1. fastboot flash vendor_boot &lt;[recovery for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade)&gt;
-1. fastboot flash dtbo &lt;[dtbo for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade)&gt;
+1. fastboot flash vendor_boot &lt;[recovery for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade) | [recovery for OnePlus 9 Pro](https://github.com/iodeOS/ota/releases/tag/v3-lemonadep)&gt;
+1. fastboot flash dtbo &lt;[dtbo for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade) | [dtbo for OnePlus 9 pro](https://github.com/iodeOS/ota/releases/tag/v3-lemonadep)&gt;
 1. Reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade)&gt;
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade) | [iodéOS for OnePlus 9 pro](https://github.com/iodeOS/ota/releases/tag/v3-lemonadep)&gt;
 
 # How to flash Google (Pixel 4, Pixel 5)
 
