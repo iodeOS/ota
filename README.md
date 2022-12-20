@@ -61,6 +61,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. fastboot flashing unlock
 1. fastboot flash vendor_boot &lt;[recovery for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade) | [recovery for OnePlus 9 Pro](https://github.com/iodeOS/ota/releases/tag/v3-lemonadep)&gt;
 1. fastboot flash dtbo &lt;[dtbo for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade) | [dtbo for OnePlus 9 pro](https://github.com/iodeOS/ota/releases/tag/v3-lemonadep)&gt;
+1. fastboot flash boot &lt;[boot for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade) | [boot for OnePlus 9 pro](https://github.com/iodeOS/ota/releases/tag/v3-lemonadep)&gt;
 1. Reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade) | [iodéOS for OnePlus 9 pro](https://github.com/iodeOS/ota/releases/tag/v3-lemonadep)&gt;
