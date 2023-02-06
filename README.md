@@ -59,62 +59,26 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Unlock OEM in developer settings
 1. Reboot to bootloader (or press power + VOLUME DOWN)
 1. fastboot flashing unlock
-1. fastboot flash vendor_boot &lt;[recovery for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade) | [recovery for OnePlus 9 Pro](https://github.com/iodeOS/ota/releases/tag/v3-lemonadep)&gt;
-1. fastboot flash dtbo &lt;[dtbo for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade) | [dtbo for OnePlus 9 pro](https://github.com/iodeOS/ota/releases/tag/v3-lemonadep)&gt;
-1. fastboot flash boot &lt;[boot for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade) | [boot for OnePlus 9 pro](https://github.com/iodeOS/ota/releases/tag/v3-lemonadep)&gt;
+1. fastboot flash vendor_boot &lt;[recovery for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v4-lemonade) | [recovery for OnePlus 9 Pro](https://github.com/iodeOS/ota/releases/tag/v4-lemonadep)&gt;
+1. fastboot flash dtbo &lt;[dtbo for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v4-lemonade) | [dtbo for OnePlus 9 pro](https://github.com/iodeOS/ota/releases/tag/v4-lemonadep)&gt;
+1. fastboot flash boot &lt;[boot for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v4-lemonade) | [boot for OnePlus 9 pro](https://github.com/iodeOS/ota/releases/tag/v4-lemonadep)&gt;
 1. Reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v3-lemonade) | [iodéOS for OnePlus 9 pro](https://github.com/iodeOS/ota/releases/tag/v3-lemonadep)&gt;
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v4-lemonade) | [iodéOS for OnePlus 9 pro](https://github.com/iodeOS/ota/releases/tag/v4-lemonadep)&gt;
 
-# How to flash Google (Pixel 4, Pixel 5)
+# How to flash Google (Pixel 3, 4, 5, 6, 6a)
 
-## Pixel 4
-
-1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Reboot to bootloader (or press power + VOLUME DOWN)
 1. fastboot flashing unlock
-1. fastboot --set-active=a
-1. fastboot flash boot &lt;[recovery for Pixel 4](https://github.com/iodeOS/ota/releases/tag/v3-flame)&gt;
-1. Reboot to recovery
-1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for Pixel 4](https://github.com/iodeOS/ota/releases/tag/v3-flame)&gt;
-
-If you want to relock the bootloader, the rom must be also flashed on the other slot:
-
-1. Reboot to bootloader
-1. fastboot --set-active=b
-1. Reboot to recovery
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for Pixel 4](https://github.com/iodeOS/ota/releases/tag/v3-flame)&gt;
-1. Reboot to bootloader
-1. fastboot erase avb_custom_key
-1. fastboot flash avb_custom_key &lt;[avb_custom_key-flame.bin](https://github.com/iodeOS/ota/releases/download/v3-flame/avb_custom_key-flame.bin)&gt;
-1. fastboot flashing lock
-1. Boot, and in developer settings uncheck "OEM unlocking"
-
-## Pixel 5
-
-1. Update the stock firmware to the latest
-1. Unlock OEM in developer settings
-1. Reboot to bootloader (or press power + VOLUME DOWN)
-1. fastboot flashing unlock
-1. fastboot --set-active=a
-1. fastboot flash vendor_boot &lt;[recovery for Pixel 5](https://github.com/iodeOS/ota/releases/tag/v3-redfin)&gt;
-1. Reboot to recovery
-1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for Pixel 5](https://github.com/iodeOS/ota/releases/tag/v3-redfin)&gt;
-
-If you want to relock the bootloader, the rom must be also flashed on the other slot:
-
-1. Reboot to bootloader
-1. fastboot --set-active=b
-1. Reboot to recovery
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for Pixel 5](https://github.com/iodeOS/ota/releases/tag/v3-redfin)&gt;
-1. Reboot to bootloader
-1. fastboot erase avb_custom_key
-1. fastboot flash avb_custom_key &lt;[avb_custom_key-redfin.bin](https://github.com/iodeOS/ota/releases/download/v3-redfin/avb_custom_key-redfin.bin)&gt;
-1. fastboot flashing lock
-1. Boot, and in developer settings uncheck "OEM unlocking"
+1. Download fastboot package for your device (latest file iode-[...]-fastboot.zip):
+   * [package for Pixel 3](https://github.com/iodeOS/ota/releases/tag/v3-blueline)
+   * [package for Pixel 4](https://github.com/iodeOS/ota/releases/tag/v4-flame)
+   * [package for Pixel 5](https://github.com/iodeOS/ota/releases/tag/v4-redfin)
+   * [package for Pixel 6](https://github.com/iodeOS/ota/releases/tag/v4-oriole)
+   * [package for Pixel 6a](https://github.com/iodeOS/ota/releases/tag/v4-bluejay)
+1. Unzip fastboot package and execute flash-all.sh (linux) or flash-all.bat (windows)
+1. At the end, accept or decline bootloader relocking; if yes, boot, and in developer settings uncheck "OEM unlocking"
 
 # How to flash Fairphone (FP3, FP3+, FP4)
 
@@ -138,16 +102,14 @@ If you want to relock the bootloader, the rom must be also flashed on the other 
 1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone-3/), but **do not unlock critical partitions** (do not execute 'fastboot flashing unlock_critical').
 1. adb reboot bootloader (or press VOLUME DOWN and plug phone while it's shut down)
 1. fastboot flashing unlock
-1. fastboot flash recovery_a &lt;[recovery for FP4](https://github.com/iodeOS/ota/releases/tag/v3-FP4)&gt;  
-   fastboot flash recovery_b &lt;[recovery for FP4](https://github.com/iodeOS/ota/releases/tag/v3-FP4)&gt;
+1. fastboot flash recovery &lt;[recovery for FP4](https://github.com/iodeOS/ota/releases/tag/v4-FP4)&gt;
 1. press POWER+VOLUME UP until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP4](https://github.com/iodeOS/ota/releases/tag/v3-FP4)&gt;
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for FP4](https://github.com/iodeOS/ota/releases/tag/v4-FP4)&gt;
 1. (optional) In order to relock bootloader: reboot to bootloader
 1.  (optional) Execute 'fastboot flashing get_unlock_ability'. It it returns 'get_unlock_ability: 0': **do not try to relock the bootloader (steps below)**
-1. (optional) If previous step returned 'get_unlock_ability: 1':
-
-   (optional) fastboot flash avb_custom_key &lt;[avb_custom_key-FP4.bin](https://github.com/iodeOS/ota/releases/download/v3-FP4/avb_custom_key-FP4.bin)&gt;
+1. (optional) If previous step returned 'get_unlock_ability: 1':  
+   (optional) fastboot flash avb_custom_key &lt;[avb_custom_key-FP4.bin](https://github.com/iodeOS/ota/releases/download/v4-FP4/avb_custom_key-FP4.bin)&gt;
 1. (optional) fastboot flashing lock
 1. (optional) Boot, and in developer settings uncheck "OEM unlocking"
 
@@ -239,29 +201,11 @@ If you want to relock the bootloader, the rom must be also flashed on the other 
 1. adb reboot bootloader (or press VOLUME UP and plug phone while it's shut down)
 1. fastboot oem unlock 0x&lt;unlock code&gt;
 1. Following your device:
-   * XA2:  
-fastboot flash boot_a [recovery-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v3-pioneer)  
-fastboot flash boot_b [recovery-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v3-pioneer)
-   * XZ1:  
-fastboot flash recovery [recovery-poplar.img](https://github.com/iodeOS/ota/releases/tag/v3-poplar)
-   * XZ2:  
-fastboot flash boot_a [recovery-akari.img](https://github.com/iodeOS/ota/releases/tag/v3-akari)  
-fastboot flash boot_b [recovery-akari.img](https://github.com/iodeOS/ota/releases/tag/v3-akari)
-   * XZ3:  
-fastboot flash boot_a [recovery-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v3-akatsuki)  
-fastboot flash boot_b [recovery-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v3-akatsuki)
-
-
-## XA2, XZ1, XZ2
-
+   * XA2: fastboot flash boot [recovery-pioneer.img](https://github.com/iodeOS/ota/releases/tag/v3-pioneer)  
+   * XZ1: fastboot flash recovery [recovery-poplar.img](https://github.com/iodeOS/ota/releases/tag/v3-poplar)
+   * XZ2: fastboot flash boot [recovery-akari.img](https://github.com/iodeOS/ota/releases/tag/v4-akari)  
+   * XZ3: fastboot flash boot [recovery-akatsuki.img](https://github.com/iodeOS/ota/releases/tag/v4-akatsuki)  
 1. Unplug the phone
 1. press POWER+VOLUME DOWN until reboot in recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for XA2](https://github.com/iodeOS/ota/releases/tag/v3-pioneer) | [iodéOS for XZ1](https://github.com/iodeOS/ota/releases/tag/v3-poplar) | [iodéOS for XZ2](https://github.com/iodeOS/ota/releases/tag/v3-akari))
-
-## XZ3 
-
-1. Unplug the phone
-1. press POWER+VOLUME DOWN until reboot in recovery
-1. From recovery => Factory reset  => Format Data
-1. From recovery => Apply update => Apply from ADB => adb sideload &lt;[iodéOS for XZ3](https://github.com/iodeOS/ota/releases/tag/v3-akatsuki)&gt;
+1. From recovery => Apply update => Apply from ADB => adb sideload &lt;rom.zip&gt; ([iodéOS for XA2](https://github.com/iodeOS/ota/releases/tag/v3-pioneer) | [iodéOS for XZ1](https://github.com/iodeOS/ota/releases/tag/v3-poplar) | [iodéOS for XZ2](https://github.com/iodeOS/ota/releases/tag/v4-akari) | [iodéOS for XZ3](https://github.com/iodeOS/ota/releases/tag/v4-akatsuki))
