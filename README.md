@@ -33,7 +33,7 @@ Since its first versions, we added many features to the iodé blocker: several l
 We included many useful default apps, but our choice cannot suit everyone; so we added the possibility to remove them. It can be done at the end of the phone setup, or at any time by going to Parameters -> Apps & Notifications -> Preinstalled apps.
 
 * MicroG core apps: GmsCore, GsfProxy, FakeStore.
-* NLP backends for MicroG : DejaVuNLPBackend (default), MozillaNLPBackend, AppleNLPBackend, RadioCellsNLPBackend, NominatimNLPBackend
+* NLP backends for MicroG (discontinued from iodéOS 4.3) : DejaVuNLPBackend (default), MozillaNLPBackend, AppleNLPBackend, RadioCellsNLPBackend, NominatimNLPBackend
 * App stores : FDroid (with F-Droid Privileged Extension) and Aurora Store.
 * Browser: our own fork of Firefox (with Qwant as default search engine, many other ones added, telemetry disabled, parts of telemetry code removed) instead of * * Lineage’s default browser Jelly.
 * SMS: QKSMS instead of Lineage's default SMS app.
@@ -47,7 +47,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 * News: to keep users informed about our developments, as well as a FAQ.
 * Meteo: Geometric Weather.
 
-## Useful options from other custom ROMs:
+## Useful options from other custom ROMs (discontinued since iodéOS 4.3):
 * Smart charging (disables charging when a given level is reached, to protect battery health).
 * Fingerprint vibration toggle.
 
@@ -91,7 +91,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. (optional) ```fastboot oem lock```
 1. (optional) Boot, and in developer settings uncheck "OEM unlocking"
 
-# FP4
+## FP4
 
 1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone-3/), but **do not unlock critical partitions** (do not execute 'fastboot flashing unlock_critical').
 1. Activate adb and type ```adb reboot bootloader```, or press ```Vol-``` and plug phone while it's shut down
@@ -173,7 +173,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
-1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol- + Bixby``` while plugging to computer
+1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol+ + Vol-``` while plugging to computer
 1. In Download Mode (DL), long press Vol+ and unlock bootloader
 1. Reboot to DL mode & flash [recovery for Note 10](https://github.com/iodeOS/ota/releases/tag/v4-d1) | [recovery for Note 10+](https://github.com/iodeOS/ota/releases/tag/v4-d2s) with command: ```heimdall flash --RECOVERY <recovery_filename>.img```
 1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
