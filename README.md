@@ -154,7 +154,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. At reboot, follow the setup wizard, make sure to be connected to the internet, then activate developer options
 1. Activate adb and type ```adb reboot bootloader```, or press  ```Power + Vol- + Bixby```
 1. Flash [recovery for S9](https://github.com/iodeOS/ota/releases/tag/v4-starlte) | [recovery for S9+](https://github.com/iodeOS/ota/releases/tag/v4-star2lte) | [recovery for Note9](https://github.com/iodeOS/ota/releases/tag/v4-crownlte) with command: ```heimdall flash --RECOVERY <recovery_filename>.img```
-1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
+1. As soon as the flash ends, quickly press ```Power + Vol+ + Bixby``` buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for S9](https://github.com/iodeOS/ota/releases/tag/v4-starlte) | [iodéOS for S9+](https://github.com/iodeOS/ota/releases/tag/v4-star2lte) | [iodéOS for Note9](https://github.com/iodeOS/ota/releases/tag/v4-crownlte))
 
@@ -163,9 +163,9 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol- + Bixby``` while plugging to computer
-1. In Download Mode (DL), long press Vol+ and unlock bootloader
+1. In Download Mode (DL), long press ```Vol+``` and unlock bootloader
 1. Reboot to DL mode & flash [recovery for S10](https://github.com/iodeOS/ota/releases/tag/v4-beyond1lte) | [recovery for S10e](https://github.com/iodeOS/ota/releases/tag/v4-beyond0lte) | [recovery for S10+](https://github.com/iodeOS/ota/releases/tag/v4-beyond2lte) with command: ```heimdall flash --RECOVERY <recovery_filename>.img```
-1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
+1. As soon as the flash of recovery ends, quickly press ```Power + Vol+ + Bixby``` buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for S10](https://github.com/iodeOS/ota/releases/tag/v4-beyond1lte) | [iodéOS for S10e](https://github.com/iodeOS/ota/releases/tag/v4-beyond0lte) | [iodéOS for S10+](https://github.com/iodeOS/ota/releases/tag/v4-beyond2lte))
 
@@ -174,11 +174,22 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol+ + Vol-``` while plugging to computer
-1. In Download Mode (DL), long press Vol+ and unlock bootloader
+1. In Download Mode (DL), long press ```Vol+``` and unlock bootloader
 1. Reboot to DL mode & flash [recovery for Note 10](https://github.com/iodeOS/ota/releases/tag/v4-d1) | [recovery for Note 10+](https://github.com/iodeOS/ota/releases/tag/v4-d2s) with command: ```heimdall flash --RECOVERY <recovery_filename>.img```
-1. As soon as the flash ends, quickly press power/vol+/bixby buttons altogether to directly reboot to recovery
+1. As soon as the flash ends, quickly press ```Power + Vol+``` buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for Note 10](https://github.com/iodeOS/ota/releases/tag/v4-d1) | [iodéOS for Note 10+](https://github.com/iodeOS/ota/releases/tag/v4-d2s))
+
+## A52s 5G
+1. Update the stock firmware to the latest
+1. Unlock OEM in developer settings
+1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol+ + Vol-``` while plugging to computer
+1. In Download Mode (DL), long press ```Vol+``` and unlock bootloader
+1. Download the latest ```iode-[...]-vbmeta.img``` and ```iode-[...]-recovery.img``` from [iodéOS for A52s 5G](https://github.com/iodeOS/ota/releases/tag/v4-a52sxq) and rename them as ```vbmeta.img``` and ```recovery.img```. Create tar files from them: ```tar cvf vbmeta.tar vbmeta.img``` and ```tar cvf recovery.tar recovery.img```
+1. Reboot to DL mode, and flash with Odin ```vbmeta.tar``` (select it in AP) and then ```recovery.tar```
+1. As soon as the flash ends, quickly  press ```Power + Vol+``` buttons altogether to directly reboot to recovery
+1. From recovery => Factory reset => Format Data/factory reset
+1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for A52s 5G](https://github.com/iodeOS/ota/releases/tag/v4-a52sxq))
 
 # How to flash Sony Xperia (XA2, XZ1, XZ2, XZ3)
 
