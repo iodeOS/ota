@@ -51,11 +51,22 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 * Smart charging (disables charging when a given level is reached, to protect battery health).
 * Fingerprint vibration toggle.
 
+# How to flash Shift (SHIFT6mq)
+
+## SHIFT6mq
+
+1. Unlock OEM in developer settings
+1. Activate adb and type ```adb reboot bootloader```, or press ```Power + Vol+```
+1. Type ```fastboot flashing unlock```
+1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
+   * [package for SHIFT6mq](https://github.com/iodeOS/ota/releases/tag/v4-axolotl)
+1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
+1. At the end, accept or decline bootloader relocking; if yes, boot, and in developer settings uncheck "OEM unlocking"
+
 # How to flash OnePlus (OnePlus 9, OnePlus 9 Pro)
 
 ## OnePlus 9 / 9 Pro
 
-1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or press ```Power + Vol-```
 1. Type ```fastboot flashing unlock```
@@ -160,7 +171,6 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 
 ## S10, S10e, S10+
 
-1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol- + Bixby``` while plugging to computer
 1. In Download Mode (DL), long press ```Vol+``` and unlock bootloader
@@ -171,7 +181,6 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 
 ## Note 10, Note 10+
 
-1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol+ + Vol-``` while plugging to computer
 1. In Download Mode (DL), long press ```Vol+``` and unlock bootloader
@@ -181,7 +190,6 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for Note 10](https://github.com/iodeOS/ota/releases/tag/v4-d1) | [iodéOS for Note 10+](https://github.com/iodeOS/ota/releases/tag/v4-d2s))
 
 ## A52s 5G
-1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol+ + Vol-``` while plugging to computer
 1. In Download Mode (DL), long press ```Vol+``` and unlock bootloader
