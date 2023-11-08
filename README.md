@@ -75,7 +75,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
    * [package for OnePlus 9 Pro](https://github.com/iodeOS/ota/releases/tag/v4-lemonadep)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 
-# How to flash Google (Pixel 3, 4, 5, 6, 6a)
+# How to flash Google (Pixel 3, 4, 5, 6, 6a, 6 Pro)
 
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or press ```Power + Vol-```
@@ -86,6 +86,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
    * [package for Pixel 5](https://github.com/iodeOS/ota/releases/tag/v4-redfin)
    * [package for Pixel 6](https://github.com/iodeOS/ota/releases/tag/v4-oriole)
    * [package for Pixel 6a](https://github.com/iodeOS/ota/releases/tag/v4-bluejay)
+   * [package for Pixel 6 Pro](https://github.com/iodeOS/ota/releases/tag/v4-raven)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 1. At the end, accept or decline bootloader relocking; if yes, boot, and in developer settings uncheck "OEM unlocking"
 
@@ -190,6 +191,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for Note 10](https://github.com/iodeOS/ota/releases/tag/v4-d1) | [iodéOS for Note 10+](https://github.com/iodeOS/ota/releases/tag/v4-d2s))
 
 ## A52s 5G
+1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol+ + Vol-``` while plugging to computer
 1. In Download Mode (DL), long press ```Vol+``` and unlock bootloader
