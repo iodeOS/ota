@@ -81,7 +81,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Activate adb and type ```adb reboot bootloader```, or press ```Power + Vol-```
 1. Type ```fastboot flashing unlock```
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
-   * [package for Pixel 3](https://github.com/iodeOS/ota/releases/tag/v3-blueline)
+   * [package for Pixel 3](https://github.com/iodeOS/ota/releases/tag/v4-blueline)
    * [package for Pixel 4](https://github.com/iodeOS/ota/releases/tag/v4-flame)
    * [package for Pixel 5](https://github.com/iodeOS/ota/releases/tag/v4-redfin)
    * [package for Pixel 6](https://github.com/iodeOS/ota/releases/tag/v4-oriole)
@@ -143,8 +143,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Activate adb and type```adb reboot bootloader```, or press ```Power + Vol-```
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
    * [package for Mi 9](https://github.com/iodeOS/ota/releases/tag/v4-cepheus)
-   * [package for Mi 10 lite](https://github.com/iodeOS/ota/releases/tag/v3-monet)
-   * [package for Mi 10T](https://github.com/iodeOS/ota/releases/tag/v3-apollon)
+   * [package for Mi 10 lite](https://github.com/iodeOS/ota/releases/tag/v4-monet)
+   * [package for Mi 10T](https://github.com/iodeOS/ota/releases/tag/v4-apollon)
 1. Unzip fastboot package and execute flash-all.sh (linux) or flash-all.bat (windows)
 
 # How to flash Samsung
@@ -180,15 +180,15 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for S10](https://github.com/iodeOS/ota/releases/tag/v4-beyond1lte) | [iodéOS for S10e](https://github.com/iodeOS/ota/releases/tag/v4-beyond0lte) | [iodéOS for S10+](https://github.com/iodeOS/ota/releases/tag/v4-beyond2lte))
 
-## Note 10, Note 10+
+## Note 10, Note 10+, Note 10+ 5G
 
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol+ + Vol-``` while plugging to computer
 1. In Download Mode (DL), long press ```Vol+``` and unlock bootloader
-1. Reboot to DL mode & flash [recovery for Note 10](https://github.com/iodeOS/ota/releases/tag/v4-d1) | [recovery for Note 10+](https://github.com/iodeOS/ota/releases/tag/v4-d2s) with command: ```heimdall flash --RECOVERY <recovery_filename>.img```
+1. Reboot to DL mode & flash [recovery for Note 10](https://github.com/iodeOS/ota/releases/tag/v4-d1) | [recovery for Note 10+](https://github.com/iodeOS/ota/releases/tag/v4-d2s) | [recovery for Note 10+ 5G](https://github.com/iodeOS/ota/releases/tag/v4-d2x) with command: ```heimdall flash --RECOVERY <recovery_filename>.img```
 1. As soon as the flash ends, quickly press ```Power + Vol+``` buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for Note 10](https://github.com/iodeOS/ota/releases/tag/v4-d1) | [iodéOS for Note 10+](https://github.com/iodeOS/ota/releases/tag/v4-d2s))
+1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for Note 10](https://github.com/iodeOS/ota/releases/tag/v4-d1) | [iodéOS for Note 10+](https://github.com/iodeOS/ota/releases/tag/v4-d2s) | [iodéOS for Note 10+ 5G](https://github.com/iodeOS/ota/releases/tag/v4-d2x))
 
 ## A52s 5G
 1. Update the stock firmware to the latest
@@ -209,7 +209,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Activate adb and type ```adb reboot bootloader```, or press ```Vol+``` and plug phone while it's shut down
 1. Type ```fastboot oem unlock 0x&lt;unlock code&gt;```
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
-   * [package for XA2](https://github.com/iodeOS/ota/releases/tag/v3-pioneer)
+   * [package for XA2](https://github.com/iodeOS/ota/releases/tag/v4-pioneer)
    * [package for XZ1](https://github.com/iodeOS/ota/releases/tag/v4-poplar)
    * [package for XZ2](https://github.com/iodeOS/ota/releases/tag/v4-akari)
    * [package for XZ3](https://github.com/iodeOS/ota/releases/tag/v4-akatsuki)
