@@ -75,7 +75,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
    * [package for OnePlus 9 Pro](https://github.com/iodeOS/ota/releases/tag/v4-lemonadep)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 
-# How to flash Google (Pixel 3, 4, 5, 6, 6a, 6 Pro)
+# How to flash Google (Pixel 3, 4, 5, 6, 6a, 6 Pro, 7, 7a, 7 Pro)
 
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or press ```Power + Vol-```
@@ -87,6 +87,9 @@ We included many useful default apps, but our choice cannot suit everyone; so we
    * [package for Pixel 6](https://github.com/iodeOS/ota/releases/tag/v4-oriole)
    * [package for Pixel 6a](https://github.com/iodeOS/ota/releases/tag/v4-bluejay)
    * [package for Pixel 6 Pro](https://github.com/iodeOS/ota/releases/tag/v4-raven)
+   * [package for Pixel 7](https://github.com/iodeOS/ota/releases/tag/v4-panther)
+   * [package for Pixel 7a](https://github.com/iodeOS/ota/releases/tag/v4-lynx)
+   * [package for Pixel 7 Pro](https://github.com/iodeOS/ota/releases/tag/v4-cheetah)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 1. At the end, accept or decline bootloader relocking; if yes, boot, and in developer settings uncheck "OEM unlocking"
 
