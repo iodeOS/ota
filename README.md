@@ -1,8 +1,8 @@
-![alt text](pictures/iode_20174.png)
+![alt text](https://gitlab.com/iode/ota/-/raw/master/pictures/iodeos_logo.png)
 
 # Introduction
 
-iodéOS is a privacy-focused operating system powered by LineageOS and based on the Android mobile platform. iodéOS aims at protecting the user's privacy with a built-in adblocker and by freeing the smartphone from snitches.
+iodéOS is a privacy-focused operating system powered by LineageOS and based on the Android mobile platform. iodéOS aims at protecting the user's privacy with a built-in adblocker and by removing embedded trackers.
 
 The objectives in the conception of this ROM are threefold:
 
@@ -14,26 +14,39 @@ The objectives in the conception of this ROM are threefold:
     * Precisely mapping DNS requests and network packets to the Android apps that emitted (or received) them.
     * Deciding which apps have a filtered network usage (by default, all apps), and which ones can communicate with blacklisted servers.
 
-Since its first versions, we added many features to the iodé blocker: several levels of protection, fine-grained control over the hosts that should be blocked or authorized, displaying statistics on a map to see the quantity of data exchanged to which countries, clearing statistics... We are actively developing the blocker, and new functionalities will be regularly added.
+Since its first versions, we added many features to the iodé blocker: several levels of protection, child protection features, fine-grained control over the hosts that should be blocked or authorized, displaying statistics on a map to see the quantity of data exchanged to which countries, clearing statistics... We are actively developing the blocker, and new functionalities will be regularly added.
 
-<img src="https://user-images.githubusercontent.com/52780214/156890648-ff6f162f-0582-455e-8fac-57314d1650a9.png" alt="Home" width="250"/><img src="https://user-images.githubusercontent.com/52780214/156890758-cd456584-ab77-430f-9c08-cd7d29e7290f.png" alt="Report" width="250"/><img src="https://user-images.githubusercontent.com/52780214/156890861-9d699ce9-68b3-43bf-b078-96e00cd1d4f3.png" alt="Report Netflix" width="250"/><img src="https://user-images.githubusercontent.com/52780214/156890884-4cb962d4-08e7-4ee3-a49e-2f8197e55e1f.png" alt="Report Facebook" width="250"/><img src="https://user-images.githubusercontent.com/52780214/156890772-e2be7fcb-5e79-4c16-a8bf-b88fd2af4166.png" alt="Map" width="250"/><img src="https://user-images.githubusercontent.com/52780214/156890791-0e812e3a-c2f8-4551-8704-e010dc0f9ad2.png" alt="Stream" width="250"/><img src="https://user-images.githubusercontent.com/52780214/156890797-1590d85c-4d06-4ff4-b01a-463b55cdd292.png" alt="Settings" width="250"/><img src="https://user-images.githubusercontent.com/52780214/156890957-7fd08951-9667-42c6-a085-e64d1eba24b5.png" alt="Customized protection" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/iode_home1.png" alt="Home1" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/iode_home2.png" alt="Home 2" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/iode_drawer.png" alt="Drawer" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/iode_preinstalled.png" alt="Preinstalled apps" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_home.png" alt="Blocker home" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_report.png" alt="Report" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_stream.png" alt="Stream" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_map.png" alt="Map" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_lists.png" alt="App blockings" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_blocked.png" alt="Blocked" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_block_host.png" alt="Block host" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_details_host.png" alt="Details host" width="250"/>
 
 # What's included
 
 ## Changes in LineageOS to prevent data leaks:
 
-* Default DNS server: Google's DNS replaced by Quad9's 'unblocked' servers in all parts of the system.
-* A-GPS: patches to avoid leaking personnal information like IMSI to supl server.
+* Default DNS server: Google's DNS replaced by Quad9's servers in all parts of the system.
+* A-GPS: patches to avoid leaking personnal information like IMSI to SUPL server.
+* SUPL server: can be disabled by a switch in phone settings.
 * Captive portal login: connectivitycheck.gstatic.com replaced by captiveportal.kuketz.de for connectivity check.
-* Dialer: Google default option replaced by OpenStreetMap for phone number lookup.
+* NTP server: change to pool.ntp.org.
+* Quick Settings Tiles: sensitive ones require unlocking (disabled by default, can be activated in lock screen security settings).
+* Wifi and bluetooth: can be automatically disabled when connection is lost.
 
 
 ## Pre-installed apps:
 
 We included many useful default apps, but our choice cannot suit everyone; so we added the possibility to remove them. It can be done at the end of the phone setup, or at any time by going to Parameters -> Apps & Notifications -> Preinstalled apps.
 
-* MicroG core apps: GmsCore, GsfProxy, FakeStore.
-* NLP backends for MicroG (discontinued from iodéOS 4.3) : DejaVuNLPBackend (default), MozillaNLPBackend, AppleNLPBackend, RadioCellsNLPBackend, NominatimNLPBackend
+* MicroG core apps: GmsCore, GsfProxy, microG Companion.
 * App stores : FDroid (with F-Droid Privileged Extension) and Aurora Store.
 * Browser: our own fork of Firefox (with Qwant as default search engine, many other ones added, telemetry disabled, parts of telemetry code removed) instead of * * Lineage’s default browser Jelly.
 * SMS: QKSMS instead of Lineage's default SMS app.
@@ -46,10 +59,6 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 * {Ad/Malware/Data leak}-blocker: iodé.
 * News: to keep users informed about our developments, as well as a FAQ.
 * Meteo: Geometric Weather.
-
-## Useful options from other custom ROMs (discontinued since iodéOS 4.3):
-* Smart charging (disables charging when a given level is reached, to protect battery health).
-* Fingerprint vibration toggle.
 
 # How to flash Shift (SHIFT6mq)
 
@@ -93,11 +102,11 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 1. At the end, accept or decline bootloader relocking; if yes, boot, and in developer settings uncheck "OEM unlocking"
 
-# How to flash Fairphone (FP3, FP3+, FP4)
+# How to flash Fairphone (FP3, FP3+, FP4, FP5)
 
 ## FP3, FP3+
 
-1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone-3/)
+1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone/)
 1. Activate adb and type ```adb reboot bootloader```, or press ```Vol-``` and plug phone while it's shut down
 1. Type ```fastboot oem unlock```
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
@@ -106,14 +115,15 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. (optional) ```fastboot oem lock```
 1. (optional) Boot, and in developer settings uncheck "OEM unlocking"
 
-## FP4
+## FP4, FP5
 
-1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone-3/), but **do not unlock critical partitions** (do not execute 'fastboot flashing unlock_critical').
+1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone/), but **do not unlock critical partitions** (do not execute 'fastboot flashing unlock_critical').
 1. Activate adb and type ```adb reboot bootloader```, or press ```Vol-``` and plug phone while it's shut down
 1. Type ```fastboot flashing unlock```
 1. Execute ```fastboot flashing get_unlock_ability```. It it returns ```get_unlock_ability: 0```: do not relock the bootloader (last step)
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
    * [package for FP4](https://github.com/iodeOS/ota/releases/tag/v4-FP4)
+   * [package for FP5](https://github.com/iodeOS/ota/releases/tag/v4-FP5)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 1. At the end, accept or decline bootloader relocking; if yes, boot, and in developer settings uncheck "OEM unlocking"
 
