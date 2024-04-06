@@ -46,19 +46,18 @@ Since its first versions, we added many features to the iodé blocker: several l
 
 We included many useful default apps, but our choice cannot suit everyone; so we added the possibility to remove them. It can be done at the end of the phone setup, or at any time by going to Parameters -> Apps & Notifications -> Preinstalled apps.
 
-* MicroG core apps: GmsCore, GsfProxy, microG Companion.
+* MicroG core apps: microG Services, microG Companion, GsfProxy.
 * App stores : FDroid (with F-Droid Privileged Extension) and Aurora Store.
-* Browser: our own fork of Firefox (with Qwant as default search engine, many other ones added, telemetry disabled, parts of telemetry code removed) instead of * * Lineage’s default browser Jelly.
+* Browser: our own fork of Firefox (with Qwant as default search engine, many other ones added, telemetry disabled, parts of telemetry code removed) instead of Lineage’s default browser Jelly.
 * SMS: QKSMS instead of Lineage's default SMS app.
 * Email: p≡p (Pretty Easy Privacy).
-* Camera: our own fork of Open Camera, with a few tweaks.
 * Maps/navigation: Magic Earth GPS & Navigation (the only one free but not open source).
-* Keyboard: OpenBoard instead of AOSP keyboard.
-* PDF: Pdf Viewer Plus.
+* Keyboard: HeliBoard instead of AOSP keyboard.
+* PDF: PdfViewerPlus.
 * Personnal notes: Carnet.
 * {Ad/Malware/Data leak}-blocker: iodé.
 * News: to keep users informed about our developments, as well as a FAQ.
-* Meteo: Geometric Weather.
+* Meteo: Breezy Weather.
 
 # How to flash Shift (SHIFT6mq)
 
@@ -84,7 +83,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
    * [package for OnePlus 9 Pro](https://github.com/iodeOS/ota/releases/tag/v4-lemonadep)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 
-# How to flash Google (Pixel 3, 4, 5, 6, 6a, 6 Pro, 7, 7a, 7 Pro)
+# How to flash Google (Pixel 3, 4, 5, 6, 6a, 6 Pro, 7, 7a, 7 Pro, 8, 8 Pro)
 
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or press ```Power + Vol-```
@@ -99,6 +98,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
    * [package for Pixel 7](https://github.com/iodeOS/ota/releases/tag/v4-panther)
    * [package for Pixel 7a](https://github.com/iodeOS/ota/releases/tag/v4-lynx)
    * [package for Pixel 7 Pro](https://github.com/iodeOS/ota/releases/tag/v4-cheetah)
+   * [package for Pixel 8](https://github.com/iodeOS/ota/releases/tag/v5-shiba)
+   * [package for Pixel 8 Pro](https://github.com/iodeOS/ota/releases/tag/v5-husky)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 1. At the end, accept or decline bootloader relocking; if yes, boot, and in developer settings uncheck "OEM unlocking"
 
@@ -203,16 +204,16 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. From recovery => Factory reset => Format Data/factory reset
 1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for Note 10](https://github.com/iodeOS/ota/releases/tag/v4-d1) | [iodéOS for Note 10+](https://github.com/iodeOS/ota/releases/tag/v4-d2s) | [iodéOS for Note 10+ 5G](https://github.com/iodeOS/ota/releases/tag/v4-d2x))
 
-## A52s 5G
+## A52s 5G, Galaxy Tab S5e (LTE/Wi-Fi)
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol+ + Vol-``` while plugging to computer
 1. In Download Mode (DL), long press ```Vol+``` and unlock bootloader
-1. Download the latest ```iode-[...]-vbmeta.img``` and ```iode-[...]-recovery.img``` from [iodéOS for A52s 5G](https://github.com/iodeOS/ota/releases/tag/v4-a52sxq) and rename them as ```vbmeta.img``` and ```recovery.img```. Create tar files from them: ```tar cvf vbmeta.tar vbmeta.img``` and ```tar cvf recovery.tar recovery.img```
+1. Download the latest ```iode-[...]-vbmeta.img``` and ```iode-[...]-recovery.img``` from ([iodéOS for A52s 5G](https://github.com/iodeOS/ota/releases/tag/v4-a52sxq) | [iodéOS for Tab S5e (LTE)](https://github.com/iodeOS/ota/releases/tag/v5-gts4lv) | [iodéOS for Tab S5e (Wi-Fi)](https://github.com/iodeOS/ota/releases/tag/v5-gts4lvwifi)) and rename them as ```vbmeta.img``` and ```recovery.img```. Create tar files from them: ```tar cvf vbmeta.tar vbmeta.img``` and ```tar cvf recovery.tar recovery.img```
 1. Reboot to DL mode, and flash with Odin ```vbmeta.tar``` (select it in AP) and then ```recovery.tar```
 1. As soon as the flash ends, quickly  press ```Power + Vol+``` buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for A52s 5G](https://github.com/iodeOS/ota/releases/tag/v4-a52sxq))
+1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for A52s 5G](https://github.com/iodeOS/ota/releases/tag/v4-a52sxq) | [iodéOS for Tab S5e (LTE)](https://github.com/iodeOS/ota/releases/tag/v5-gts4lv) | [iodéOS for Tab S5e (Wi-Fi)](https://github.com/iodeOS/ota/releases/tag/v5-gts4lvwifi))
 
 # How to flash Sony Xperia (XA2, XZ1, XZ2, XZ3)
 
