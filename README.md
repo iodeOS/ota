@@ -67,7 +67,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Activate adb and type ```adb reboot bootloader```, or press ```Power + Vol+```
 1. Type ```fastboot flashing unlock```
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
-   * [package for SHIFT6mq](https://github.com/iodeOS/ota/releases/tag/v4-axolotl)
+   * [package for SHIFT6mq](https://gitlab.iode.tech/ota/release/-/tree/master/axolotl)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 1. At the end, accept or decline bootloader relocking; if yes, boot, and in developer settings uncheck "OEM unlocking"
 
@@ -79,8 +79,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Activate adb and type ```adb reboot bootloader```, or press ```Power + Vol-```
 1. Type ```fastboot flashing unlock```
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
-   * [package for OnePlus 9](https://github.com/iodeOS/ota/releases/tag/v4-lemonade)
-   * [package for OnePlus 9 Pro](https://github.com/iodeOS/ota/releases/tag/v4-lemonadep)
+   * [package for OnePlus 9](https://gitlab.iode.tech/ota/release/-/tree/master/lemonade)
+   * [package for OnePlus 9 Pro](https://gitlab.iode.tech/ota/release/-/tree/master/lemonadep)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 
 # How to flash Google (Pixel 3, 4, 5, 6, 6a, 6 Pro, 7, 7a, 7 Pro, 8, 8 Pro)
@@ -89,17 +89,17 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Activate adb and type ```adb reboot bootloader```, or press ```Power + Vol-```
 1. Type ```fastboot flashing unlock```
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
-   * [package for Pixel 3](https://github.com/iodeOS/ota/releases/tag/v4-blueline)
-   * [package for Pixel 4](https://github.com/iodeOS/ota/releases/tag/v4-flame)
-   * [package for Pixel 5](https://github.com/iodeOS/ota/releases/tag/v4-redfin)
-   * [package for Pixel 6](https://github.com/iodeOS/ota/releases/tag/v4-oriole)
-   * [package for Pixel 6a](https://github.com/iodeOS/ota/releases/tag/v4-bluejay)
-   * [package for Pixel 6 Pro](https://github.com/iodeOS/ota/releases/tag/v4-raven)
-   * [package for Pixel 7](https://github.com/iodeOS/ota/releases/tag/v4-panther)
-   * [package for Pixel 7a](https://github.com/iodeOS/ota/releases/tag/v4-lynx)
-   * [package for Pixel 7 Pro](https://github.com/iodeOS/ota/releases/tag/v4-cheetah)
-   * [package for Pixel 8](https://github.com/iodeOS/ota/releases/tag/v5-shiba)
-   * [package for Pixel 8 Pro](https://github.com/iodeOS/ota/releases/tag/v5-husky)
+   * [package for Pixel 3](https://gitlab.iode.tech/ota/release/-/tree/master/blueline)
+   * [package for Pixel 4](https://gitlab.iode.tech/ota/release/-/tree/master/flame)
+   * [package for Pixel 5](https://gitlab.iode.tech/ota/release/-/tree/master/redfin)
+   * [package for Pixel 6](https://gitlab.iode.tech/ota/release/-/tree/master/oriole)
+   * [package for Pixel 6a](https://gitlab.iode.tech/ota/release/-/tree/master/bluejay)
+   * [package for Pixel 6 Pro](https://gitlab.iode.tech/ota/release/-/tree/master/raven)
+   * [package for Pixel 7](https://gitlab.iode.tech/ota/release/-/tree/master/panther)
+   * [package for Pixel 7a](https://gitlab.iode.tech/ota/release/-/tree/master/lynx)
+   * [package for Pixel 7 Pro](https://gitlab.iode.tech/ota/release/-/tree/master/cheetah)
+   * [package for Pixel 8](https://gitlab.iode.tech/ota/release/-/tree/master/shiba)
+   * [package for Pixel 8 Pro](https://gitlab.iode.tech/ota/release/-/tree/master/husky)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 1. At the end, accept or decline bootloader relocking; if yes, boot, and in developer settings uncheck "OEM unlocking"
 
@@ -111,7 +111,7 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Activate adb and type ```adb reboot bootloader```, or press ```Vol-``` and plug phone while it's shut down
 1. Type ```fastboot oem unlock```
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
-   * [package for FP3/FP3+](https://github.com/iodeOS/ota/releases/tag/v4-FP3)
+   * [package for FP3/FP3+](https://gitlab.iode.tech/ota/release/-/tree/master/FP3)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 1. (optional) ```fastboot oem lock```
 1. (optional) Boot, and in developer settings uncheck "OEM unlocking"
@@ -123,8 +123,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Type ```fastboot flashing unlock```
 1. Execute ```fastboot flashing get_unlock_ability```. It it returns ```get_unlock_ability: 0```: do not relock the bootloader (last step)
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
-   * [package for FP4](https://github.com/iodeOS/ota/releases/tag/v4-FP4)
-   * [package for FP5](https://github.com/iodeOS/ota/releases/tag/v4-FP5)
+   * [package for FP4](https://gitlab.iode.tech/ota/release/-/tree/master/FP4)
+   * [package for FP5](https://gitlab.iode.tech/ota/release/-/tree/master/FP5)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
 1. At the end, accept or decline bootloader relocking; if yes, boot, and in developer settings uncheck "OEM unlocking"
 
@@ -156,9 +156,9 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Unlock your phone by following the instructions from [Xiaomi website](https://en.miui.com/unlock/download_en.html)
 1. Activate adb and type```adb reboot bootloader```, or press ```Power + Vol-```
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
-   * [package for Mi 9](https://github.com/iodeOS/ota/releases/tag/v4-cepheus)
-   * [package for Mi 10 lite](https://github.com/iodeOS/ota/releases/tag/v4-monet)
-   * [package for Mi 10T](https://github.com/iodeOS/ota/releases/tag/v4-apollon)
+   * [package for Mi 9](https://gitlab.iode.tech/ota/release/-/tree/master/cepheus)
+   * [package for Mi 10 lite](https://gitlab.iode.tech/ota/release/-/tree/master/monet)
+   * [package for Mi 10T](https://gitlab.iode.tech/ota/release/-/tree/master/apollon)
 1. Unzip fastboot package and execute flash-all.sh (linux) or flash-all.bat (windows)
 
 # How to flash Samsung
@@ -179,41 +179,41 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Unlock OEM in developer settings
 1. At reboot, follow the setup wizard, make sure to be connected to the internet, then activate developer options
 1. Activate adb and type ```adb reboot bootloader```, or press  ```Power + Vol- + Bixby```
-1. Flash [recovery for S9](https://github.com/iodeOS/ota/releases/tag/v4-starlte) | [recovery for S9+](https://github.com/iodeOS/ota/releases/tag/v4-star2lte) | [recovery for Note9](https://github.com/iodeOS/ota/releases/tag/v4-crownlte) with command: ```heimdall flash --RECOVERY <recovery_filename>.img```
+1. Flash [recovery for S9](https://gitlab.iode.tech/ota/release/-/tree/master/starlte) | [recovery for S9+](https://gitlab.iode.tech/ota/release/-/tree/master/star2lte) | [recovery for Note9](https://gitlab.iode.tech/ota/release/-/tree/master/crownlte) with command: ```heimdall flash --RECOVERY <recovery_filename>.img```
 1. As soon as the flash ends, quickly press ```Power + Vol+ + Bixby``` buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for S9](https://github.com/iodeOS/ota/releases/tag/v4-starlte) | [iodéOS for S9+](https://github.com/iodeOS/ota/releases/tag/v4-star2lte) | [iodéOS for Note9](https://github.com/iodeOS/ota/releases/tag/v4-crownlte))
+1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for S9](https://gitlab.iode.tech/ota/release/-/tree/master/starlte) | [iodéOS for S9+](https://gitlab.iode.tech/ota/release/-/tree/master/star2lte) | [iodéOS for Note9](https://gitlab.iode.tech/ota/release/-/tree/master/crownlte))
 
 ## S10, S10e, S10+
 
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol- + Bixby``` while plugging to computer
 1. In Download Mode (DL), long press ```Vol+``` and unlock bootloader
-1. Reboot to DL mode & flash [recovery for S10](https://github.com/iodeOS/ota/releases/tag/v4-beyond1lte) | [recovery for S10e](https://github.com/iodeOS/ota/releases/tag/v4-beyond0lte) | [recovery for S10+](https://github.com/iodeOS/ota/releases/tag/v4-beyond2lte) with command: ```heimdall flash --RECOVERY <recovery_filename>.img```
+1. Reboot to DL mode & flash [recovery for S10](https://gitlab.iode.tech/ota/release/-/tree/master/beyond1lte) | [recovery for S10e](https://gitlab.iode.tech/ota/release/-/tree/master/beyond0lte) | [recovery for S10+](https://gitlab.iode.tech/ota/release/-/tree/master/beyond2lte) with command: ```heimdall flash --RECOVERY <recovery_filename>.img```
 1. As soon as the flash of recovery ends, quickly press ```Power + Vol+ + Bixby``` buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for S10](https://github.com/iodeOS/ota/releases/tag/v4-beyond1lte) | [iodéOS for S10e](https://github.com/iodeOS/ota/releases/tag/v4-beyond0lte) | [iodéOS for S10+](https://github.com/iodeOS/ota/releases/tag/v4-beyond2lte))
+1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for S10](https://gitlab.iode.tech/ota/release/-/tree/master/beyond1lte) | [iodéOS for S10e](https://gitlab.iode.tech/ota/release/-/tree/master/beyond0lte) | [iodéOS for S10+](https://gitlab.iode.tech/ota/release/-/tree/master/beyond2lte))
 
 ## Note 10, Note 10+, Note 10+ 5G
 
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol+ + Vol-``` while plugging to computer
 1. In Download Mode (DL), long press ```Vol+``` and unlock bootloader
-1. Reboot to DL mode & flash [recovery for Note 10](https://github.com/iodeOS/ota/releases/tag/v4-d1) | [recovery for Note 10+](https://github.com/iodeOS/ota/releases/tag/v4-d2s) | [recovery for Note 10+ 5G](https://github.com/iodeOS/ota/releases/tag/v4-d2x) with command: ```heimdall flash --RECOVERY <recovery_filename>.img```
+1. Reboot to DL mode & flash [recovery for Note 10](https://gitlab.iode.tech/ota/release/-/tree/master/d1) | [recovery for Note 10+](https://gitlab.iode.tech/ota/release/-/tree/master/d2s) | [recovery for Note 10+ 5G](https://gitlab.iode.tech/ota/release/-/tree/master/d2x) with command: ```heimdall flash --RECOVERY <recovery_filename>.img```
 1. As soon as the flash ends, quickly press ```Power + Vol+``` buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for Note 10](https://github.com/iodeOS/ota/releases/tag/v4-d1) | [iodéOS for Note 10+](https://github.com/iodeOS/ota/releases/tag/v4-d2s) | [iodéOS for Note 10+ 5G](https://github.com/iodeOS/ota/releases/tag/v4-d2x))
+1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for Note 10](https://gitlab.iode.tech/ota/release/-/tree/master/d1) | [iodéOS for Note 10+](https://gitlab.iode.tech/ota/release/-/tree/master/d2s) | [iodéOS for Note 10+ 5G](https://gitlab.iode.tech/ota/release/-/tree/master/d2x))
 
 ## A52s 5G, Galaxy Tab S5e (LTE/Wi-Fi)
 1. Update the stock firmware to the latest
 1. Unlock OEM in developer settings
 1. Activate adb and type ```adb reboot bootloader```, or shut down phone and press ```Vol+ + Vol-``` while plugging to computer
 1. In Download Mode (DL), long press ```Vol+``` and unlock bootloader
-1. Download the latest ```iode-[...]-vbmeta.img``` and ```iode-[...]-recovery.img``` from ([iodéOS for A52s 5G](https://github.com/iodeOS/ota/releases/tag/v4-a52sxq) | [iodéOS for Tab S5e (LTE)](https://github.com/iodeOS/ota/releases/tag/v5-gts4lv) | [iodéOS for Tab S5e (Wi-Fi)](https://github.com/iodeOS/ota/releases/tag/v5-gts4lvwifi)) and rename them as ```vbmeta.img``` and ```recovery.img```. Create tar files from them: ```tar cvf vbmeta.tar vbmeta.img``` and ```tar cvf recovery.tar recovery.img```
+1. Download the latest ```iode-[...]-vbmeta.img``` and ```iode-[...]-recovery.img``` from ([iodéOS for A52s 5G](https://gitlab.iode.tech/ota/release/-/tree/master/a52sxq) | [iodéOS for Tab S5e (LTE)](https://gitlab.iode.tech/ota/release/-/tree/master/gts4lv) | [iodéOS for Tab S5e (Wi-Fi)](https://gitlab.iode.tech/ota/release/-/tree/master/gts4lvwifi)) and rename them as ```vbmeta.img``` and ```recovery.img```. Create tar files from them: ```tar cvf vbmeta.tar vbmeta.img``` and ```tar cvf recovery.tar recovery.img```
 1. Reboot to DL mode, and flash with Odin ```vbmeta.tar``` (select it in AP) and then ```recovery.tar```
 1. As soon as the flash ends, quickly  press ```Power + Vol+``` buttons altogether to directly reboot to recovery
 1. From recovery => Factory reset => Format Data/factory reset
-1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for A52s 5G](https://github.com/iodeOS/ota/releases/tag/v4-a52sxq) | [iodéOS for Tab S5e (LTE)](https://github.com/iodeOS/ota/releases/tag/v5-gts4lv) | [iodéOS for Tab S5e (Wi-Fi)](https://github.com/iodeOS/ota/releases/tag/v5-gts4lvwifi))
+1. From recovery => Apply update => Apply from ADB => ```adb sideload <rom.zip>``` ([iodéOS for A52s 5G](https://gitlab.iode.tech/ota/release/-/tree/master/a52sxq) | [iodéOS for Tab S5e (LTE)](https://gitlab.iode.tech/ota/release/-/tree/master/gts4lv) | [iodéOS for Tab S5e (Wi-Fi)](https://gitlab.iode.tech/ota/release/-/tree/master/gts4lvwifi))
 
 # How to flash Sony Xperia (XA2, XZ1, XZ2, XZ3)
 
@@ -223,8 +223,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 1. Activate adb and type ```adb reboot bootloader```, or press ```Vol+``` and plug phone while it's shut down
 1. Type ```fastboot oem unlock 0x&lt;unlock code&gt;```
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
-   * [package for XA2](https://github.com/iodeOS/ota/releases/tag/v4-pioneer)
-   * [package for XZ1](https://github.com/iodeOS/ota/releases/tag/v4-poplar)
-   * [package for XZ2](https://github.com/iodeOS/ota/releases/tag/v4-akari)
-   * [package for XZ3](https://github.com/iodeOS/ota/releases/tag/v4-akatsuki)
+   * [package for XA2](https://gitlab.iode.tech/ota/release/-/tree/master/pioneer)
+   * [package for XZ1](https://gitlab.iode.tech/ota/release/-/tree/master/poplar)
+   * [package for XZ2](https://gitlab.iode.tech/ota/release/-/tree/master/akari)
+   * [package for XZ3](https://gitlab.iode.tech/ota/release/-/tree/master/akatsuki)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
