@@ -16,18 +16,13 @@ The objectives in the conception of this ROM are threefold:
 
 Since its first versions, we added many features to the iodé blocker: several levels of protection, child protection features, fine-grained control over the hosts that should be blocked or authorized, displaying statistics on a map to see the quantity of data exchanged to which countries, clearing statistics... We are actively developing the blocker, and new functionalities will be regularly added.
 
-<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/iode_home1.png" alt="Home1" width="250"/>
-<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/iode_home2.png" alt="Home 2" width="250"/>
-<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/iode_drawer.png" alt="Drawer" width="250"/>
-<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/iode_preinstalled.png" alt="Preinstalled apps" width="250"/>
-<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_home.png" alt="Blocker home" width="250"/>
-<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_report.png" alt="Report" width="250"/>
-<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_stream.png" alt="Stream" width="250"/>
-<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_map.png" alt="Map" width="250"/>
-<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_lists.png" alt="App blockings" width="250"/>
-<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_blocked.png" alt="Blocked" width="250"/>
-<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_block_host.png" alt="Block host" width="250"/>
-<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_details_host.png" alt="Details host" width="250"/>
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/iode_home1.png" alt="Home1" width="250"/> <img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/iode_home2.png" alt="Home 2" width="250"/> <img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/iode_drawer.png" alt="Drawer" width="250"/>
+
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/iode_preinstalled.png" alt="Preinstalled apps" width="250"/> <img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_home.png" alt="Blocker home" width="250"/> <img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_report.png" alt="Report" width="250"/>
+
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_stream.png" alt="Stream" width="250"/> <img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_map.png" alt="Map" width="250"/> <img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_lists.png" alt="App blockings" width="250"/>
+
+<img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_blocked.png" alt="Blocked" width="250"/> <img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_block_host.png" alt="Block host" width="250"/> <img src="https://gitlab.com/iode/ota/-/raw/master/pictures/mini/blocker_details_host.png" alt="Details host" width="250"/>
 
 # What's included
 
@@ -107,9 +102,8 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 
 ## FP3, FP3+
 
-1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone/)
-1. Activate adb and type ```adb reboot bootloader```, or press ```Vol-``` and plug phone while it's shut down
-1. Type ```fastboot oem unlock```
+1. Unlock your phone's bootloader by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone/)
+1. Put your phone into bootloader mode (activate adb and type ```adb reboot bootloader```, or press ```Vol-``` and plug phone while it's shut down)
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
    * [package for FP3/FP3+](https://gitlab.iode.tech/ota/release/-/tree/master/FP3)
 1. Unzip fastboot package and execute ```flash-all.sh``` (linux) or ```flash-all.bat``` (windows)
@@ -118,10 +112,9 @@ We included many useful default apps, but our choice cannot suit everyone; so we
 
 ## FP4, FP5
 
-1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone/), but **do not unlock critical partitions** (do not execute 'fastboot flashing unlock_critical').
-1. Activate adb and type ```adb reboot bootloader```, or press ```Vol-``` and plug phone while it's shut down
-1. Type ```fastboot flashing unlock```
-1. Execute ```fastboot flashing get_unlock_ability```. It it returns ```get_unlock_ability: 0```: do not relock the bootloader (last step)
+1. Unlock your phone by following the instructions from [Fairphone website](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone/), but **do not unlock critical partitions** (i.e. do not execute 'fastboot flashing unlock_critical').
+1. Put your phone into bootloader mode (activate adb and type ```adb reboot bootloader```, or press ```Vol-``` and plug phone while it's shut down)
+1. Execute ```fastboot flashing get_unlock_ability```. In case it returns ```get_unlock_ability: 0```: do not relock the bootloader (last step)
 1. Download fastboot package for your device (latest file ```iode-[...]-fastboot.zip```):
    * [package for FP4](https://gitlab.iode.tech/ota/release/-/tree/master/FP4)
    * [package for FP5](https://gitlab.iode.tech/ota/release/-/tree/master/FP5)
